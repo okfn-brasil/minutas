@@ -19,13 +19,13 @@ Follow these steps:
 
 * `git clone https://git.codeandomexico.org/codeandomexico/decidim.git`
 * `cd decidim`
-* either create a postgres database user and database owned by this user or just
-  a user able to create databases and use `bin/rails db:create` to create the
-  databases.
+* either create a postgres user and a database owned by this user or just a user
+  able to create databases and use `bin/rails db:create` to create it.
 * set the `DATABASE_USERNAME`, `DATABASE_PASSWORD` and `DATABASE_NAME`
   environment variables.
 * run `bin/rails db:migrate` to run the migrations.
-* (optional) run `bin/rails db:seed` to seed the database.
+* (optional) run `bin/rails db:seed` to seed the database. This will create an
+  organization and some users.
 * start the server with `bin/rails server`
 
 and refer to [the docs](https://docs.decidim.org/en/v0.27/install/manual) for
