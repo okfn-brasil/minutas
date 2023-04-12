@@ -30,3 +30,9 @@ Follow these steps:
 
 and refer to [the docs](https://docs.decidim.org/en/v0.27/install/manual) for
 more information.
+
+## Management
+
+You can create a system admin account with:
+
+    bin/rails decidim_system:create_admin
