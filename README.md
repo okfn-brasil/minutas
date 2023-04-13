@@ -36,3 +36,8 @@ more information.
 You can create a system admin account with:
 
     bin/rails decidim_system:create_admin
+
+When an organization is created and an admin invited in development look for the
+email in the console and maybe use something like
+https://www.webatic.com/quoted-printable-convertor to decode it and follow de
+invite link.
