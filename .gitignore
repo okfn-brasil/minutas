@@ -30,7 +30,7 @@
 /public/decidim-packs
 /public/sw*
 .byebug_history
-.env
+.env*
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
