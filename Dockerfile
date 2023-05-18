@@ -48,6 +48,9 @@ COPY ./postcss.config.js /app/
 # Finally build the static assets for production
 ENV RAILS_ENV production
 ENV NODE_ENV production
+# the variable bellow is not strictly necessary except that from decidim 0.27.3
+# the assets:precompile step fails without this
+ENV SECRET_KEY_BASE asdf
 RUN bundle exec rake assets:precompile
 
 # -----------------------------------------------------------------------------+
