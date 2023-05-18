@@ -50,3 +50,9 @@ invite link.
 Run a job queue:
 
     bin/rake jobs:work
+
+## Adding gems
+
+* modify `Gemfile` with the new dependencies
+* run `bundle install`
+* run the gem's specific install steps
