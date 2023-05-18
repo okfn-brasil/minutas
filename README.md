@@ -10,6 +10,7 @@ This is Codeandomexico's own vanilla Decidim deployment.
 ### Requisites
 
 * ruby `3.0.2`
+* bundler `2.3.20`
 * node `16`
 * yarn
 
