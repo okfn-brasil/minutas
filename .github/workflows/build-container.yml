@@ -1,0 +1,22 @@
+name: Build container on tags
+
+on:
+  push:
+    tags:
+      - *
+
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Docker Image
+        uses: VaultVulp/gp-docker-action@1.2.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          image-name: decidim
+          extract-git-tag: true
+          additional-image-tags: latest
+          dockerfile: Dockerfile
+          build-context: .
