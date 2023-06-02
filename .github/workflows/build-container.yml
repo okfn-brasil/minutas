@@ -3,7 +3,7 @@ name: Build container on tags
 on:
   push:
     tags:
-      - *
+      - '*'
 
 jobs:
   build-image:
