@@ -1,4 +1,3 @@
-LABEL org.opencontainers.image.source=https://github.com/okfn-brasil/minutas
 # -----------------------------------------------------------------------------+
 # Compile the assets in a layer with node, different from the final container.
 # This will allow for reduced image size because we don't need node in
@@ -107,5 +106,7 @@ COPY ./config.ru /app/
 COPY Rakefile /app/
 COPY db/ /app/db/
 COPY app/ /app/app/
+
+LABEL org.opencontainers.image.source=https://github.com/okfn-brasil/minutas
 
 ENTRYPOINT ["./scripts/entrypoint.sh"]
