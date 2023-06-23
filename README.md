@@ -27,6 +27,7 @@ Follow these steps:
 * run `bin/rails db:migrate` to run the migrations.
 * (optional) run `bin/rails db:seed` to seed the database. This will create an
   organization and some users.
+* Install frontend dependencies with `yarn install`
 * start the server with `bin/rails server`
 
 and refer to [the docs](https://docs.decidim.org/en/v0.27/install/manual) for
