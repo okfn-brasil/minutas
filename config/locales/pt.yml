@@ -1,0 +1,80 @@
+pt:
+  decidim:
+    pages:
+      home:
+        hero:
+          participate_title: participate_title
+
+    meetings:
+      content_blocks:
+        upcoming_meetings:
+          upcoming_meetings: upcoming_meetings
+
+    accessibility:
+      front_page_link: front_page_link
+
+    shared:
+      mentions_modal:
+        remove_recipient: remove_recipient
+
+  layouts:
+    decidim:
+      footer:
+        data_consent_settings: data_consent_settings
+
+      offline_banner:
+        cache_version_page: cache_version_page
+
+      data_consent:
+        warning:
+          all_categories: all_categories
+          consent_required: consent_required
+          change_settings: change_settings
+
+        dialog:
+          title: title
+          description: description
+          accept_all: accept_all
+          accept_only_essential: accept_only_essential
+          settings: settings
+
+        modal:
+          title: title
+          description: description
+          toggle: toggle
+          accept_all: accept_all
+          accept_only_essential: accept_only_essential
+          save_settings: save_settings
+
+          essential:
+            title: title
+            description: description
+          preferences:
+            title: title
+            description: description
+          analytics:
+            title: title
+            description: description
+          marketing:
+            title: title
+            description: description
+
+        details:
+          columns:
+            type: type
+            name: name
+            service: service
+            description: description
+          types:
+            cookie: cookie
+            local_storage: local_storage
+          items:
+            _session_id:
+              service: service
+              description: description
+            decidim-consent:
+              service: service
+              description: description
+            pwaInstallPromptSeen:
+              service: service
+              description: description
