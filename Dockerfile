@@ -44,6 +44,7 @@ COPY bin/ /app/bin/
 COPY config/ /app/config/
 COPY Rakefile /app/
 COPY ./postcss.config.js /app/
+COPY ./babel.config.json /app/
 
 # Finally build the static assets for production
 ENV RAILS_ENV production
