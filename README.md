@@ -26,7 +26,8 @@ Follow these steps:
   environment variables.
 * run `bin/rails db:migrate` to run the migrations.
 * (optional) run `bin/rails db:seed` to seed the database. This will create an
-  organization and some users.
+  organization and some users. Use `admin@example.org` and password
+  `decidim123456789` to log in.
 * Install frontend dependencies with `yarn install`
 * start the server with `bin/rails server`
 
