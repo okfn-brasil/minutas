@@ -1,0 +1,29 @@
+/**
+ * Hero
+ */
+.hero-heading {
+  display: none;
+}
+
+.hero__container {
+  text-align: right;
+}
+
+.hero-cta {
+  padding: .7rem 1rem;
+  border-radius: 100px;
+  color: black;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hero-cta.button.expanded {
+  width: auto;
+  display: inline-block;
+}
+
+.button--sc.large {
+  font-size: 28px;
+  font-weight: 600;
+}

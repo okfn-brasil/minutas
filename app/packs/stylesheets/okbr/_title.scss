@@ -1,0 +1,29 @@
+/**
+ * Title bar
+ */
+.title-bar {
+  background-color: white;
+  text-transform: uppercase;
+}
+
+.title-bar,
+.topbar__admin__link a,
+.topbar__user__login a,
+.topbar__search input,
+.topbar__dropmenu > ul > li > a {
+  color: black;
+  font-weight: 100;
+}
+
+.topbar__admin__link a:hover {
+  color: #333;
+}
+
+.topbar__notifications .icon,
+.topbar__conversations .icon {
+  fill: black;
+}
+
+.topbar__search input {
+  background-color: $color-cyan;
+}

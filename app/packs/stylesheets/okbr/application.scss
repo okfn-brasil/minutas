@@ -1,0 +1,17 @@
+@import 'stylesheets/okbr/_fonts.scss';
+@import 'stylesheets/okbr/_title.scss';
+@import 'stylesheets/okbr/_search.scss';
+@import 'stylesheets/okbr/_hero.scss';
+@import 'stylesheets/okbr/_nav.scss';
+
+body {
+  font-family: 'HK Grotesk', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.heading3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: left;
+}

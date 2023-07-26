@@ -1,0 +1,41 @@
+/**
+ * Search bar
+ */
+.okbr-search {
+  background-color: $color-cyan;
+  height: 2.4rem;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.okbr-search__form {
+  display: flex;
+}
+
+.okbr-search__input {
+  border: 0;
+  background-color: transparent;
+  box-shadow: none;
+  height: 100%;
+  margin: 0;
+}
+
+.okbr-search__input::placeholder {
+  color: black;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.okbr-search__input:focus {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.okbr-search__button {
+  height: 100%;
+  padding: 0 .7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
