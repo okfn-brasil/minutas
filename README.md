@@ -18,8 +18,8 @@ This is Codeandomexico's own vanilla Decidim deployment.
 
 Follow these steps:
 
-* `git clone https://git.codeandomexico.org/codeandomexico/decidim.git`
-* `cd decidim`
+* `git clone https://github.com/okfn-brasil/minutas.git`
+* `cd minutas`
 * either create a postgres user and a database owned by this user or just a user
   able to create databases and use `bin/rails db:create` to create it.
 * set the `DATABASE_USERNAME`, `DATABASE_PASSWORD` and `DATABASE_NAME`
