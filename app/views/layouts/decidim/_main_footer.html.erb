@@ -1,0 +1,56 @@
+<div class="main-footer">
+  <div class="row medium-up-4">
+    <div class="column">
+      <% if current_organization.official_img_footer.attached? %>
+        <%= link_to current_organization.official_url do %>
+          <%= image_tag current_organization.attached_uploader(:official_img_footer).path, alt: current_organization.name %>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="column">
+      <nav class="main__footer__nav">
+        <ul class="footer-nav">
+          <% organization_pages = current_organization.static_pages_accessible_for(current_user) %>
+          <% if organization_pages.any? %>
+            <% current_organization.static_page_topics.where(show_in_footer: true).each do |page_topic| %>
+              <% topic_pages = page_topic.accessible_pages_for(current_user) %>
+              <% if topic_pages.any? %>
+                <li><%= link_to translated_attribute(page_topic.title), decidim.page_path(topic_pages.first) %></li>
+              <% end %>
+            <% end %>
+
+            <% organization_pages.where(show_in_footer: true).each do |page| %>
+              <li><%= link_to translated_attribute(page.title), decidim.page_path(page) %></li>
+            <% end %>
+          <% end %>
+          <li><%= link_to t("layouts.decidim.footer.download_open_data"), decidim.open_data_download_path %></li>
+          <li><a href="#" data-open="dc-modal"><%= t("layouts.decidim.footer.data_consent_settings") %></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="column">
+      <%= render partial: "layouts/decidim/social_media_links" %>
+    </div>
+    <div class="column">
+      <a rel="decidim noopener"
+         href="https://decidim.org/"
+         target="_blank">
+        <%= image_pack_tag("media/images/decidim-logo.svg", alt: t("layouts.decidim.footer.decidim_logo")) %>
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column footer-cc">
+      <div class="footer-cc__left">
+        <%= image_pack_tag("media/images/ccby.png", alt: "Creative commons logo", class: "cc") %>
+      </div>
+      <div class="footer-cc__right">
+        Todo o conteúdo deste site está disponível sob a licença Creative
+        Commons Atribuição 4.0 Internacional, exceto quando especifcada outra
+        licença. Isso signifca que pode ser compartilhado e reutilizado para
+        trabalhos derivados, desde que citada a fonte.
+      </div>
+    </div>
+  </div>
+</div>

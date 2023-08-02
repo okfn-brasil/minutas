@@ -1,0 +1,38 @@
+.main-footer {
+  padding: 5rem 0;
+}
+
+.main-footer > :not(:first-child) {
+  margin-top: 2rem;
+}
+
+.main-footer a,
+.main-footer a:hover {
+  color: white;
+}
+
+.main__footer__nav {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-social__icon .icon {
+  width: 34px;
+  height: 34px;
+}
+
+.footer-cc {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+img.cc {
+  height: 24px;
+}
