@@ -4,6 +4,8 @@ pt:
       home:
         hero:
           participate_title: Participe nos processos da plataforma
+        footer_sub_hero:
+          register: Cadastre-se
 
     meetings:
       content_blocks:
