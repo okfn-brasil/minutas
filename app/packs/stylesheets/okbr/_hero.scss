@@ -27,3 +27,36 @@
   font-size: 28px;
   font-weight: 600;
 }
+
+.hero__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__words {
+  text-align: left;
+}
+
+.hero__button {
+  display: flex;
+  align-items: center;
+}
+
+.hero__word {
+  font-size: 40px;
+  line-height: 1;
+  overflow: hidden;
+}
+
+.hero__word:not(:first-child) {
+  margin-top: 5px;
+}
+
+.hero__word span {
+  background-color: $color-cyan;
+  padding: 0 1rem;
+  line-height: 1;
+}
+.hero__word.highlight span {
+  background-color: $color-pink;
+}
