@@ -56,3 +56,14 @@
 .hero__word.highlight span {
   background-color: $color-pink;
 }
+
+@media all and (max-width: 520px) {
+    .hero__inner {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .hero__button {
+        align-self: end;
+    }
+}

@@ -19,6 +19,11 @@
 .footer-social {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-social li {
+    padding-left: 0;
 }
 
 .footer-social__icon .icon {
@@ -35,4 +40,23 @@
 
 img.cc {
   height: 24px;
+}
+
+@media all and (max-width: 639px) {
+    .main-footer {
+        text-align: center;
+    }
+
+    .main-footer .column {
+        margin-top: 1.5rem;
+    }
+
+    .main__footer__nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
 }

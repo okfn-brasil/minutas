@@ -32,7 +32,18 @@
 }
 
 .main-nav__link a,
-.main-nav__link a:hover {
+.main-nav__link a:hover,
+.main-nav__link a:focus {
   color: black;
   font-weight: 100;
+}
+
+.usermenu-off-canvas-holder .topbar__user__login a {
+    color: white;
+}
+
+@media all and (max-width: 639px) {
+    .topbar__dropmenu > ul > li > a {
+        color: white;
+    }
 }
