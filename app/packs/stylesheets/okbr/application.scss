@@ -6,6 +6,7 @@
 @import 'stylesheets/okbr/_banner.scss';
 @import 'stylesheets/okbr/_footer.scss';
 @import 'stylesheets/okbr/_footer_sub_hero.scss';
+@import 'stylesheets/okbr/_highlighted_processes.scss';
 
 body {
   font-family: 'HK Grotesk', sans-serif;
@@ -17,4 +18,13 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   text-align: left;
+}
+
+.button--sc {
+  background-color: $color-pink;
+  color: black;
+  border-radius: 100px;
+  padding: .5rem 1rem;
+  font-weight: 900;
+  font-size: 22px;
 }

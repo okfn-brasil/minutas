@@ -9,15 +9,13 @@ h4.heading4 {
   font-size: 21px;
 }
 
-a.subhero-cta {
-  background-color: black;
-  color: white;
-  border-radius: 100px;
-  padding: .5rem 1rem;
-  font-weight: bold;
-  font-size: 22px;
-}
-
 .subhero {
   text-align: left;
+}
+
+#footer_sub_hero .button--sc {
+  background-color: black;
+  color: white;
+  margin-top: 2rem;
+  display: inline-block;
 }

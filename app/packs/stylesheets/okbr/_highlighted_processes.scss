@@ -1,0 +1,23 @@
+#highlighted_processes {
+  background-color: $color-gray;
+}
+
+#highlighted_processes .card {
+  background-color: transparent;
+}
+
+#highlighted_processes .card__content {
+  background-color: transparent;
+  padding: .7rem 0;
+}
+
+#highlighted_processes .card__title {
+  color: black;
+  font-family: 'HK Grotesk', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#highlighted_processes .heading3 {
+  margin-bottom: 4rem;
+}

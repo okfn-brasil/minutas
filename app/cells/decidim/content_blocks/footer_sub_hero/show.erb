@@ -5,7 +5,7 @@
       <h4 class="heading4">Vamos construir uma sociedade mais aberta, transparente e colaborativa.
 Inscreva-se, participe e decida.</h4>
       <% if current_organization.sign_up_enabled? && !current_user %>
-        <%= link_to decidim.new_user_registration_path, class: "button--sc link subhero-cta", title: t("decidim.pages.home.sub_hero.register_title") do %>
+        <%= link_to decidim.new_user_registration_path, class: "button button--sc", title: t("decidim.pages.home.sub_hero.register_title") do %>
           <%= t("decidim.pages.home.footer_sub_hero.register") %>
         <% end %>
       <% end %>

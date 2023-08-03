@@ -21,6 +21,13 @@
 
 @font-face {
   font-family: 'HK Grotesk';
+  src: url(fonts/hk-grotesk/HKGrotesk-ExtraBold.otf) format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HK Grotesk';
   src: url(fonts/hk-grotesk/HKGrotesk-LightLegacyItalic.otf) format('opentype');
   font-weight: 100;
   font-style: italic;
