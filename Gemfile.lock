@@ -789,6 +789,7 @@ DEPENDENCIES
   daemons (~> 1.4)
   decidim (= 0.27.3)
   decidim-dev (= 0.27.3)
+  delayed_job (~> 4.1.11)
   delayed_job_active_record (~> 4.1)
   faker (~> 2.14)
   letter_opener_web (~> 2.0)

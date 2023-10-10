@@ -16,6 +16,7 @@ gem "bootsnap", "~> 1.3"
 gem "puma", ">= 5.0.0" # the web server
 gem "faker", "~> 2.14"
 gem "wicked_pdf", "~> 2.1"
+gem "delayed_job", "~> 4.1.11"
 gem "delayed_job_active_record", "~> 4.1" # runs background tasks like sending emails
 gem 'daemons', '~> 1.4' # required to run the delayed_job script
 
