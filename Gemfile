@@ -5,7 +5,7 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 # Decidim-specific gems
-gem "decidim", "0.27.3"
+gem "decidim", "0.27.4"
 # gem "decidim-conferences", "0.27.2"
 # gem "decidim-consultations", "0.27.2"
 # gem "decidim-elections", "0.27.2"
@@ -24,7 +24,7 @@ group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
   gem "brakeman"
-  gem "decidim-dev", "0.27.3"
+  gem "decidim-dev", "0.27.4"
 end
 
 group :development do
