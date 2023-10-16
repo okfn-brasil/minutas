@@ -1,0 +1,13 @@
+@import "stylesheets/decidim/email.scss";
+
+// Override styles
+//
+// See: https://github.com/decidim/decidim/blob/release/0.27-stable/decidim-core/app/packs/stylesheets/decidim/email.scss
+table.body th.decidim-bar,
+table.body td.decidim-bar  {
+  background-color: #ececec;
+}
+
+.cityhall-bar {
+  background-color: #ececec;
+}
