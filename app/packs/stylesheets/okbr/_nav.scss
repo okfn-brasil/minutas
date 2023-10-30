@@ -27,15 +27,20 @@
   border-right: solid 1px black;
 }
 
-.main-nav__link--active a {
-  box-shadow: inset 0 -4px 0 0 var(--primary);
-}
-
 .main-nav__link a,
 .main-nav__link a:hover,
 .main-nav__link a:focus {
   color: black;
   font-weight: 100;
+}
+
+.main-nav__link--active a,
+.main-nav__link--active a:hover,
+.main-nav__link--active a:focus {
+  color: var(--primary);
+  box-shadow: none;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .usermenu-off-canvas-holder .topbar__user__login a {
