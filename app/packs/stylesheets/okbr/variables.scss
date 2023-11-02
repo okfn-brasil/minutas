@@ -5,3 +5,10 @@ $color-gray: #ececec;
 
 $color-primary: $color-pink;
 $anchor-color: $color-purple;
+
+$button-padding: .5rem 1rem;
+$button-background: $color-pink;
+$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-color: $black;
+$button-color-alt: $white;
+$button-radius: 100px;

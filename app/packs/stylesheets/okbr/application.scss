@@ -22,13 +22,24 @@ body {
   text-align: left;
 }
 
+.button {
+  text-transform: uppercase;
+}
+
 .button--sc {
-  background-color: $color-pink;
-  color: black;
-  border-radius: 100px;
-  padding: .5rem 1rem;
   font-weight: 900;
   font-size: 22px;
+}
+
+.button--shadow{
+  $shadows: (
+    primary: shade($color-primary, 50%),
+    secondary: shade($color-purple, 50%),
+  );
+
+  @include modifiers(background-color, $shadows){
+    color: $white;
+  }
 }
 
 .floating-helper__content {
