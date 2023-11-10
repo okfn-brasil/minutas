@@ -47,6 +47,8 @@ invite link.
 
 ## Deployment
 
+An image is created and deployed every time you push a tag. Use the following format: `git tag X.Y.Z` and `git push --tags`. Example: `git tag 1.6.0`
+
 ### Background tasks
 
 Run a job queue:
