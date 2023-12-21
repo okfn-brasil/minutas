@@ -1,6 +1,8 @@
-pt:
+pt-BR:
   activemodel:
     attributes:
+      content_block_attachment:
+        background_image: Imagem de fundo
       meeting:
         end_time: Hora de término
         iframe_embed_type: Tipo de iframe a embeber
@@ -797,7 +799,7 @@ pt:
       admin:
         import_results:
           new:
-            download_export: Baixe a Exportação com formato CSV
+            download_export: "Baixe a Exportação com formato CSV"
             info: |
               <p>Nós recomendamos que você siga esses passos:</p>
               <ol>
@@ -818,7 +820,7 @@ pt:
                     <li><b>ids_propostos:</b> Identificadores interno das propostas relacionadas (serparadas por vírgula). É automaticamente convertida para <span class='attribute-name'>url_proposta</span></li>
                  </ul>
                </li>
-             </ol>
+              </ol>
       admin_log:
         status:
           create: "%{user_name} criou o status %{resource_name} "
