@@ -1,0 +1,1440 @@
+pt-BR:
+  activemodel:
+    attributes:
+      content_block_attachment:
+        background_image: Imagem de fundo
+      meeting:
+        end_time: Hora de término
+        iframe_embed_type: Tipo de iframe a embeber
+        registration_type: Tipo de registo
+        reserved_slots: Vagas reservadas para esta reunião
+        start_time: Hora de início
+      meeting_agenda:
+        title: Título
+        visible: Visível
+      meeting_agenda_items:
+        description: Descrição
+        duration: Duração
+        title: Título
+      meeting_registration_invite:
+        email: Email
+        name: Nome
+      validate_registration_code:
+        code: Código
+      user:
+        locale: Local
+        tos_agreement: Acordo de termos e condiciones de uso
+      post:
+        body: Corpo
+        decidim_author_id: Autor
+        published_at: Hora de publicação
+        title: Título
+      timeline_entry:
+        title: Título
+      debate:
+        scope_id: Âmbito
+      conference:
+        signature_name: Nome de assinatura
+      conference_media_link:
+        weight: Posição de ordenamento
+      conference_partner:
+        weight: Posição de ordenamento
+      conference_registration_type:
+        weight: Posição de ordenamento
+      conference_speaker:
+        personal_url: Site pessoal
+        short_bio: Biografia resumida
+        twitter_handle: Usuário de X (twitter)
+      organization:
+        twitter_handle: Nome de usuário de X (twitter)
+      project:
+        proposals: Propostas
+      proposals_import:
+        scope_id: Âmbito
+        import_proposals: Importar propostas
+        keep_answers: Manter o estado e as respostas
+        keep_authors: Manter aos autores originais
+      attachment:
+        weight: Posição de ordenamento
+      attachment_collection:
+        weight: Posição de ordenamento
+      category:
+        weight: Posição de ordenamento
+      external_domain:
+        value: valor
+      help_section:
+        content: Conteúdo
+      participatory_space_private_user:
+        email: Email
+        name: Nome
+      static_page:
+        topic_id: Tópico
+      confirmation:
+        verification_code: Código de verificação
+      mobile_phone:
+        mobile_phone_number: Número de telephone celular
+      ballot_style:
+        code: Código
+      monitoring_committee_member:
+        email: Email
+        name: Nome
+      polling_officer:
+        email: Email
+        name: Nome
+      polling_station:
+        address: Endereço
+        location: Locação
+        location_hints: Dicas de localização
+        polling_station_managers: Gerentes
+        polling_station_president_id: Presidente
+        title: Título
+      trustees_participatory_space:
+        user_id: Participante
+      voting:
+        banner_image: Imagem de banner
+        census_contact_information: Informação de contato do censo
+        description: Descrição
+        introductory_image: Imagem introdutória
+        promoted: Promovido
+        scope_id: Âmbito
+        show_check_census: Mostrar página "checar censo"
+        title: Título
+      participatory_process:
+        document: Documento
+        import_attachments: Importar anexos
+        import_categories: Importar categorias
+        import_components: Importar componentes
+        import_steps: Importar etapas
+        participatory_process_type_id: Tipo de processo
+        private_space: Processo privado
+      participatory_process_type:
+        title: Título
+      assemblies_type:
+        title: Título
+      assembly:
+        announcement: Anúncio
+        documents: Documentos
+        import_attachments: Importar anexos
+        import_categories: Importar categorías
+        twitter: X
+      assembly_member:
+        weight: Posição de ordenamento
+      initiative:
+        answer: Resposta
+        answer_url: URL de resposta
+        area_id: Área
+        decidim_scope_id: Âmbito
+        hashtag: Hashtag
+        type_id: Tipo
+      initiatives_settings:
+        initiatives_order: Ordem
+      initiatives_type:
+        comments_enabled: Permitir comentários
+        signature_type: Tipo de coleta de assinatura
+      initiatives_type_scope:
+        decidim_scopes_id: Âmbitos
+        supports_required: Apoios requeridos
+    errors:
+      models:
+        meeting:
+          attributes:
+            iframe_embed_type:
+              not_embeddable: Esta URL não pode ser incorporada na página de eventos de reunião ou ao vivo.
+            online_meeting_url:
+              url_format: Precisa ser uma URL válida
+        newsletter:
+          attributes:
+            base:
+              at_least_one_space: Selecione pelo menos um espaço participativo
+        participatory_space_private_user_csv_import:
+          attributes:
+            file:
+              malformed: Arquivo de importação malformado, por favor leia as instruções cuidadosamente e certifique-se de que o arquivo é codificado em UTF-8.
+        user_group_csv_verification:
+          attributes:
+            file:
+              malformed: Arquivo de importação malformado, por favor leia as instruções cuidadosamente e certifique-se de que o arquivo é codificado em UTF-8.
+        census_data:
+          attributes:
+            file:
+              malformed: Arquivo de importação malformado, por favor leia as instruções cuidadosamente e certifique-se de que o arquivo é codificado em UTF-8.
+        voting:
+          attributes:
+            voting_type:
+              inclusion: "%{value} não é um tipo de votação válido"
+        participatory_text:
+          attributes:
+            document:
+              allowed_file_content_types: 'Tipo de documento inválido. Apenas arquivos com as seguintes extensões são permitidos: %{types}.'
+        participatory_process:
+          attributes:
+            document:
+              allowed_file_content_types: 'Tipo de documento inválido. Apenas arquivos com as seguintes extensões são permitidos: %{types}.'
+        assembly:
+          attributes:
+              document:
+                allowed_file_content_types: 'Tipo de documento inválido. Apenas arquivos com as seguintes extensões são permitidos: %{types}.'
+      new_import:
+        attributes:
+          file:
+            invalid_file: Arquivo inválido fornecido, por favor, verifique se o arquivo está formatado corretamente.
+    models:
+      decidim/invited_to_group_event: Convidado para o grupo
+      decidim/promoted_to_admin_event: Promovido a administrador do grupo
+      decidim/resource_hidden_event: Conteúdo ocultado
+      decidim/user_group_created_event: Grupo de usuários foi criado
+      decidim/welcome_notification_event: Mensagem de boas-vindas
+      decidim/debates/creation_enabled_event: Criação de debates ativada
+      decidim/comments/comment_upvoted_event: Comentário valorizado positivamente
+  activerecord:
+    models:
+      decidim/budgets/budget:
+        one: Orçamento
+        other: Orçamentos
+      decidim/voting:
+        one: Votação
+        other: Votações
+      decidim/initiative:
+        one: Iniciativa
+        other: Iniciativas
+  decidim:
+    admin:
+      filters:
+        meetings:
+          with_any_origin:
+            label: Origem
+            values:
+              official: Oficial
+              participants: Participante
+          with_any_type:
+            values:
+              hybrid: Híbrido
+              online: Virtual
+        projects:
+          category_id_eq:
+            label: Categoría
+          scope_id_eq:
+            label: Âmbito
+          selected_at_null:
+            label: Selecionado
+            values:
+              'false': Selecionado para implementação
+              'true': Não selecionado para implementação
+        moderated_users:
+          reports_reason_eq:
+            label: Razão da denúncia
+            values:
+              does_not_belong: Não pertence
+              offensive: Ofensivo
+              spam: Spam
+        search_placeholder:
+          report_count_eq: Número de denúncias
+          user_name_or_user_nickname_or_user_email_cont: Pesquise %{collection} por e-mail, nome ou apelido.
+        validated_eq:
+          label: Validado
+          values:
+            'false': Assinado
+            'true': Não assinado
+      actions:
+        user:
+          new: Novo administrador
+        new_process_type: Novo tipo de processo
+        new_process_user_role: Novo administrador de processo
+        preview: Pré-visualização
+        publish: Publicar
+        resend_invitation: Reenviar convite
+        unpublish: Remover publicação
+        import_assembly: Importar
+        new_assembly: Nova reunião
+        new_assembly_type: Novo tipo de reunião
+        new_initiative_type: Novo tipo de iniciativa
+      password_change:
+        alert: Você precisa alterar sua senha para prosseguir
+        notification: Os usuários administradores precisam alterar sua senha a cada %{days} dias.
+      conference_user_roles:
+        index:
+          conference_admins_title: Administradores da conferência
+      menu:
+        participatory_process_types: Tipos de processo
+        initiatives_settings: Configurações
+      models:
+        participatory_process_type:
+          fields:
+            created_at: Criado em
+            title: Título
+          name: Tipo de processo        
+      titles:
+        edit_external_domains: Lista branca de domínios externos
+        edit_organization_appearance: Editar aparência da página inicial
+        pages: Paginas
+        users: Administradores
+        participatory_process_types: Tipos de processos participativos
+      admin_terms_of_use:
+        actions:
+          accept: Concordo com estes termos
+          refuse: Recusar os termos de administrador
+        required_review:
+          cta: Reveja eles agora.
+      attachments_privacy_warning:
+        message: Tenha cuidado ao trabalhar com anexos em um espaço privado. Qualquer participante pode compartilhar este documento com outros.
+      dashboard:
+        show:
+          welcome: Ben-vindo/a ao Painel de Administração
+      imports:
+        and: e
+        data_errors:
+          duplicate_headers:
+            detail: Por favor, verifique se o arquivo contém colunas obrigatórias ou cabeçalhos apenas uma vez.
+            message:
+              one: Coluna duplicada %{columns}.
+              other: Colunas duplicadas %{columns}.
+          invalid_indexes:
+            lines:
+              detail: Por favor, verifique se essas linhas estão formatadas corretamente e contém registros válidos.
+              message:
+                one: Ocorreu um erro no arquivo de importação na linha %{indexes}.
+                other: Erros encontrados no arquivo de importação nas linhas %{indexes}.
+            records:
+              detail: Por favor, verifique se estes registros estão formatados corretamente e contém registros válidos.
+              message:
+                one: Encontrado um erro no arquivo de importação para registros com os números de ordem %{indexes}.
+                other: Erros encontrados no arquivo de importação para registros com ordem número %{indexes}.
+          missing_headers:
+            detail: Por favor, verifique se o arquivo contém colunas obrigatórias.
+            message:
+              one: Falta a seguinte coluna %{columns}.
+              other: Faltam as seguintes colunas %{columns}.
+        example_error: Não foi possível criar um exemplo para o tipo fornecido
+        new:
+          download_example: Baixar exemplo
+          download_example_format: Exemplo como %{name}
+      moderated_users:
+        index:
+          title: Participantes relatados
+      newsletters:
+        select_recipients_to_deliver:
+          send_to_all_users: Enviar para todos os usuários
+          send_to_followers: Enviar para seguidores
+          send_to_participants: Enviar para participantes
+      organization:
+        form:
+          twitter: X
+      organization_appearance:
+        form:
+          colors:
+            colors_warning_html: Aviso! Mudando essas cores pode quebrar os contrastes de acessibilidade. Você pode verificar o contraste de sua escolha com o <a href="%{link}">Verificador de Contrastes WebAIM</a> ou outras ferramentas similares.
+          cta_button_path_help: 'Você pode substituir onde o botão Chamar para Ação na página inicial liga. Use caminhos parciais, não URLs completas aqui. Aceita letras, números, traços e barras e deve começar com uma letra. O botão Chamar para Ação é exibido na página inicial entre o texto de boas-vindas e a descrição. Exemplo: %{url}'
+      organization_homepage:
+        edit:
+          active_content_blocks: Blocos de conteúdo ativo
+          inactive_content_blocks: Inactive content blocks
+      participatory_space_private_users_csv_imports:
+        new:
+          destroy:
+            button: Excluir todos os participantes privados
+            confirm: Tem certeza que deseja excluir todos os participantes privados? Esta ação não pode ser desfeita, não será possível recuperá-los.
+            empty: Você não tem participantes privados.
+            explanation: Você tem %{count} participantes privados.
+            title: Excluir todos os participantes privados
+      reminders:
+        create:
+          error: Ocorreu um problema ao criar lembretes.
+          success:
+            one: "%{count} usuário será lembrado."
+            other: "%{count} usuários serão lembrados."
+        new:
+          submit: Enviar
+      shared:
+        gallery:
+          edit_images: Editar imagens
+      users:
+        new:
+          title: Convidar novo administrador
+      participatory_process_types:
+        create:
+          error: Ocorreu um erro ao criar um novo tipo de processo participativo.
+          success: Tipo de processo criado com sucesso.
+        destroy:
+          success: Tipo de processo excluído com sucesso.
+        edit:
+          title: Editar tipo de processo
+          update: Atualizar
+        new:
+          create: Criar
+          title: Novo tipo de processo
+        update:
+          error: Ocorreu um erro ao atualizar este tipo de processo.
+          success: Tipo de processo atualizado com sucesso.
+      templates:
+        update:
+          erro: Ocorreu um erro ao atualizar este modelo.
+      initiatives_settings:
+        update:
+          error: Ocorreu um erro.
+          success: As configurações de iniciativas foram atualizadas com sucesso.
+    components:
+      component_order_selector:
+        order:
+          order: Votação orçamental
+      dummy:
+        settings:
+          global:
+            guided: Entrada guiada
+            guided_help: Texto de ajuda
+            guided_readonly: Entrada desabilitada
+            guided_rich: Entrada de rich text guiada
+            guided_rich_help_html: HTML <strong>ajuda</strong> texto
+            guided_rich_readonly_html: HTML <strong>ajuda</strong> texto para entrada desativada
+      blogs:
+        actions:
+          comment: Comentar
+          create: Criar
+          destroy: Excluir
+          endorse: Endossar
+          update: Atualizar
+      debates:
+        settings:
+          step:
+            creation_enabled: Os participantes podem criar debates
+      budgets:
+        settings:
+          global:
+            geocoding_enabled: Geocodificação habilitada
+            vote_rule_selected_projects_enabled: 'Habilitar regra: Número mínimo e máximo de projetos a serem votados'
+      surveys:
+        settings:
+          step:
+            allow_unregistered_help: Se ativo, nenhum login será necessário para responder a pesquisa. Isso pode levar a dados ruins ou não confiáveis e será mais vulnerável a ataques automatizados. Usar com cuidado! Lembre-se de que um usuário pode responder à mesma pesquisa várias vezes, usando navegadores diferentes ou a função "navegação privada" de seu navegador.
+      elections:
+        actions:
+          vote: Votar
+        name: Eleições
+        settings:
+          global:
+            announcement: Anúncio
+          step:
+            announcement: Anúncio
+      proposals:
+        settings:
+          step:
+            creation_enabled: Os participantes podem criar propostas
+            creation_enabled_readonly: Essa configuração é desativada quando você ativa a funcionalidade de textos participativos. Para enviar propostas como texto participativo, clique no botão de textos participativos e siga as instruções.
+            publish_answers_immediately_help_html: Lembre-se de que, se você responder qualquer proposta sem isto habilitado, será necessário publicá-las manualmente, selecionando-as e usando a ação para publicação. Para obter mais informações sobre como isso funciona, consulte a página de documentação de respostas de <a href="https://docs.decidim.org/en/admin/components/proposals/answers#_publication" target="_blank">proposta</a>.
+      comment:
+        moderated_at: Comentário moderado em %{date}
+        show_replies:
+          one: Mostrar resposta
+          other: Mostrar %{count} respostas
+    events:
+      nickname_event:
+        notification_body: Temos corrigido a forma que os nomes de usuário são utilizados para que não haja duplicados, e por isso excluimos a regra de sensibilidade de maiúsculas e minúsculas. <br/> Seu nome de usuário foi criado depois de um usuário com o mesmo nome, portanto renomeamos automaticamente. Pode mudar seu nome de usuário em <a href="%{link_to_account_settings}">suas configurações de conta</a>.
+      users:
+        user_officialized:
+          email_intro: O participante %{name} (%{nickname}) foi oficializado.
+          email_outro: Você recebeu esta notificação porque é um administrador da organização.
+          email_subject: "%{name} foi oficializada"
+          notification_title: O participante %{name} (%{nickname}) foi oficializado.
+      verifications:
+        verify_with_managed_user:
+          email_intro: O participante <a href="%{resource_url}">%{resource_title}</a> tentou se verificar com os dados de outro participante (<a href="%{managed_user_url}">%{managed_user_name}</a>).
+          email_outro: Verifique a <a href="%{conflicts_url}">lista de conflitos das verificações</a> e entre em contato com o participante para verificar seus detalhes e resolver o problema.
+          email_subject: Falha na tentativa de verificação contra outro usuário
+          notification_title: O participante <a href="%{resource_path}">%{resource_title}</a> tentou se verificar com os dados de outro participante (<a href="%{managed_user_path}">%{managed_user_name}</a>).
+      proposals:
+        collaborative_draft_access_accepted:
+          email_intro: '%{requester_name} foi aceito para acessar como colaborador do projeto colaborativo <a href="%{resource_url}">%{resource_title}</a>.'
+          email_outro: Você recebeu esta notificação porque é colaborador de <a href="%{resource_url}">%{resource_title}</a>.
+        collaborative_draft_access_rejected:
+          email_intro: '%{requester_name} foi rejeitado para acessar como colaborador do projeto de colaboração <a href="%{resource_url}">%{resource_title}</a>.'
+          email_outro: Você recebeu esta notificação porque é colaborador de <a href="%{resource_url}">%{resource_title}</a>.
+        collaborative_draft_access_requested:
+          email_intro: '%{requester_name} solicitou acesso como colaborador. Você pode <strong>aceitar ou rejeitar a solicitação</strong> da página do projeto colaborativo <a href="%{resource_url}">%{resource_title}</a>.'
+          email_outro: Você recebeu esta notificação porque é colaborador de <a href="%{resource_url}">%{resource_title}</a>.
+        collaborative_draft_access_requester_accepted:
+          email_intro: Você foi aceito para acessar como colaborador do projeto colaborativo <a href="%{resource_url}">%{resource_title}</a>.
+          email_outro: Você recebeu esta notificação porque pediu para se tornar um colaborador de <a href="%{resource_url}">%{resource_title}</a>.
+        collaborative_draft_access_requester_rejected:
+          email_intro: Você foi rejeitado para acessar como colaborador do projeto colaborativo <a href="%{resource_url}">%{resource_title}</a>.
+          email_outro: Você recebeu esta notificação porque pediu para se tornar um colaborador de <a href="%{resource_url}">%{resource_title}</a>.
+        collaborative_draft_withdrawn:
+          email_intro: <a href="%{author_url}">%{author_name} %{author_nickname}</a> retirou o projeto de colaboração <a href="%{resource_url}">%{resource_title}</a>.
+          email_outro: Você recebeu esta notificação porque é colaborador de <a href="%{resource_url}">%{resource_title}</a>.
+        proposal_published_for_space:
+          notification_title: A proposta <a href="%{resource_path}">%{resource_title}</a> foi adicionada a %{participatory_space_title} por %{author}.
+          notification_title_official: A proposta oficial <a href="%{resource_path}">%{resource_title}</a> foi adicionada à %{participatory_space_title}.
+        proposal_rejected:
+          affected_user:
+            email_subject: Sua proposta foi rejeitada
+      assemblies:
+        create_assembly_member:
+          email_outro: Você recebeu esta notificação porque foi convidado para um assembleia. Verifique a <a href="%{resource_url}">página de assembleia</a> para contribuir!
+    forms:
+      meetings:
+        attendees_count_help_text: Não se esqueça de incluir o número total de participantes na sua reunião, seja em pessoa, on-line ou híbrido.
+      file_help:
+        file:
+          explanation: 'Orientação para o ficheiro:'
+          message_1: Tem que ser uma imagem ou um documento.
+          message_2: Para imagens, use a orientação de tipo paisagem, o serviço recorta a imagem.
+        icon:
+          explanation: 'Orientação para o ícone:'
+          message_1: Deve ser uma imagem quadrada.
+          message_2: O tamanho recomendado para esta imagem é 512x512.
+      file_validation:
+        max_file_dimension: 'Dimensões máximas de arquivo: %{resolution} pixels'
+      files:
+        extension_allowlist: 'Formatos aceitos: %{extensions}'
+      upload:
+        labels:
+          add_attachment: Adicionar anexo
+          add_file: Adicionar arquivo
+          add_image: Adicionar imagem
+          edit_image: Editar imagem
+          error: Erro!
+          file_size_too_large: 'O tamanho do arquivo é grande demais! Tamanho maximo de arquivo: %{megabytes}MB'
+          remove: Excluir
+          replace: Substituir
+          title: Título
+          title_required: Título é obrigatório!
+          uploaded: Carregado
+          validating: Validando...
+          validation_error: Erro de validação!
+      upload_help:
+        dropzone: Solte os arquivos aqui ou clique para carregar
+        explanation: Orientação para %{attribute}
+      admin:
+        questionnaires:
+          form:
+            add_title_and_description: Adicionar título e descrição
+          title_and_description:
+            collapse: Recolher
+            description: Descrição
+            down: Para Baixo
+            expand: Expandir
+            remove: Excluir
+            title: Título
+            title_and_description: Título e descrição
+            up: Acima
+      admin_log:
+        questionnaire:
+          update: "%{user_name} atualizou o questionário %{resource_name}"
+      images:
+        processors:
+          resize_and_pad: "Esta imagem será redimensionada e preenchida para %{dimensions}."
+          resize_to_fit: "Esta imagem será redimensionada para caber %{dimensions}."
+      question_types:
+        title_and_description: Título e descrição
+      questionnaire_answer_presenter:
+        download_attachment: Baixar anexo
+    meetings:
+      admin:
+        meetings:
+          form:
+            select_an_iframe_access_level: Por favor, selecione um nível de acesso iframe
+            show_embedded_iframe_help: 'Apenas alguns serviços permitem incorporar na reunião ou evento ao vivo dos seguintes domínios: %{domains}'
+      admin_log:
+        questionnaire:
+          update: "%{user_name} atualizou o questionário para a reunião %{meeting_name}"
+      application_helper:
+        filter_category_values:
+          all: Todos
+        filter_meeting_space_values:
+          all: Todos
+      calendar:
+        meeting_to_event:
+          read_more: Leia mais sobre esta reunião
+      calendar_modal:
+        copy_calendar_url: URL do calendário
+        copy_calendar_url_clarification: Copiar URL do calendário para área de transferência
+        copy_calendar_url_copied: Copiado!
+        copy_calendar_url_description: Você pode ver todas as reuniões publicadas no seu aplicativo de calendário ou provedor. Copie e cole esta URL do seu calendário utilizando a opção "Adicionar novo calendário a partir de uma URL".
+        copy_calendar_url_explanation: Por favor, note que você está exportando uma seleção de reuniões, pois existem filtros ativos. Se deseja exportá-los todos, redefina todos os filtros primeiro.
+        copy_calendar_url_message: URL copiada com sucesso para área de transferência.
+      close_meeting_reminder_mailer:
+        close_meeting_reminder:
+          body: A reunião <a href="%{meeting_path}">"%{meeting_title}"</a> está pendente para ser fechada. Adicione um relatório da reunião usando o botão "Fechar reunião".
+          greetings: Saudações,<br/>%{organization_name}<br/><a href="%{organization_url}">%{organization_url}</a>
+          hello: Olá %{username},
+          subject: Agora você pode encerrar sua reunião com um relatório na plataforma %{organization_name}
+      content_blocks:
+        upcoming_meetings:
+          name: Próximas reuniões
+          upcoming_meetings: Próximas reuniões
+          view_all_meetings: Ver todas
+      iframe_access_level:
+        all: Todos os visitantes
+        registered: Participantes registrados nesta reunião
+        signed_in: Only signed-in participants
+      iframe_embed_type:
+        embed_in_meeting_page: Incorporar na página da reunião
+        none: Nenhum
+        open_in_live_event_page: Abrir na página de eventos ao vivo (com enquetes opcionais)
+        open_in_new_tab: Abrir URL em uma nova aba
+      meetings:
+        filters:
+          origin_values:
+            participants: Participantes
+            user_groups: Grupos
+          type_values:
+            hybrid: Híbrido
+        form:
+          select_an_iframe_access_level: Por favor, selecione um nível de acesso iframe
+          show_embedded_iframe_help: Apenas alguns serviços permitem incorporar na reunião ou evento ao vivo (YouTube, Twitch e Jitsi)
+        index:
+          click_here: Veja todas as reuniões
+          see_all: Veja todas as reuniões
+          see_all_withdrawn: Veja todas as reuniões retiradas
+          text_banner: Você está vendo a lista de reuniões retiradas por seus autores. %{go_back_link}.
+        show:
+          edit_close_meeting: Editar relatório da reunião
+          join: Participe da reunião
+          withdraw_btn_hint: Você pode retirar sua reunião se mudar de ideia. A reunião não é excluída, ela aparecerá na lista de reuniões retiradas.
+          withdraw_confirmation_html: Tem certeza de que deseja retirar esta reunião?<br><br><strong>esta ação não pode ser cancelada!</strong>
+          withdraw_meeting: Retirar reunião
+      models:
+        meeting:
+          fields:
+            id: ID
+      polls:
+        questions:
+          index_admin:
+            edit: Editar no painel de administração
+      type_of_meeting:
+        hybrid: Híbrido
+      types:
+        withdraw: Retirado
+      withdraw:
+        error: Ocorreu um erro ao retirar a reunião.
+        success: A reunião foi retirada com sucesso.
+    accessibility:
+      front_page_link: Ir à página inicial
+    account:
+      email_change:
+        body1: Enviamos um e-mail para %{unconfirmed_email} para verificar seu novo endereço de e-mail.
+        body2: Precisa que enviemos o e-mail de verificação novamente? %{resend_link} ou %{cancel_link}.
+        cancel: cancelar
+        cancel_error: Não foi possível cancelar a alteração do email.
+        cancel_successfully: Alteração de e-mail cancelada com sucesso.
+        resend_error: Não foi possível reenviar o e-mail de confirmação.
+        resend_successfully: E-mail de confirmação reenviado com sucesso para %{unconfirmed_email}.
+        send_again: Enviar novamente
+        title: Verificação de mudança de e-mail
+      show:
+        available_locales_helper: Escolha o idioma que você deseja usar para navegar e receber notificações na plataforma.
+    admin_log:
+      area_type:
+        create: "%{user_name} criou o tipo de área %{resource_name}"
+        delete: "%{user_name} excluiu o tipo de área %{resource_name}"
+        update: "%{user_name} atualizou o tipo de área %{resource_name}"
+      attachment:
+        create: "%{user_name} criou o anexo %{resource_name}"
+        delete: "%{user_name} excluiu o anexo %{resource_name}"
+        update: "%{user_name} atualizou o anexo %{resource_name}"
+      attachment_collection:
+        create: "%{user_name} criou a coleção %{resource_name} de anexos"
+        delete: "%{user_name} excluiu a coleção %{resource_name} de anexos"
+        update: "%{user_name} atualizou a coleção %{resource_name} de anexos"
+      category:
+        create: "%{user_name} adicionou a categoria %{resource_name} ao espaço %{space_name}"
+        delete: "%{user_name} excluiu a categoria %{resource_name} do espaço %{space_name}"
+        update: "%{user_name} atualizou a categoria %{resource_name} no espaço %{space_name}"
+      component:
+        export_component: "%{user_name} exportou %{resource_name} %{component_name} em %{space_name} como %{format_name}"
+        update_permissions_with_space: "%{user_name} atualizou as permissões de %{resource_name} no %{space_name}"
+      contextual_help_section:
+        update: "%{user_name} atualizou a seção de ajuda %{resource_name}"
+      helpers:
+        answers: respostas
+        comments: comentários
+        projects: projetos
+        results: resultados
+      organization:
+        update_external_domain: "%{user_name} atualizou os domínios externos da organização"
+      scope_type:
+        create: "%{user_name} criou o tipo de escopo %{resource_name}"
+        delete: "%{user_name} excluiu o tipo de escopo %{resource_name}"
+        update: "%{user_name} atualizou o tipo de escopo %{resource_name}"
+      user_group:
+        block: "%{user_name} bloqueou o grupo de usuários %{resource_name}"
+        unblock: "%{user_name} desbloqueou o grupo de usuários %{resource_name}"
+      conferences:
+        registration_type:
+          delete: "%{user_name} removeu o tipo de registro %{resource_name} da conferência %{space_name}"
+      participatory_process:
+        duplicate: "%{user_name} duplicou o processo participativo %{resource_name}"
+        export: "%{user_name} exportou o processo participativo %{resource_name}"
+        import: "%{user_name} importou o processo participativo %{resource_name}"
+      participatory_process_type:
+        create: "%{user_name} criou o tipo de processo participativo %{resource_name}"
+        delete: "%{user_name} criou o tipo de processo participativo %{resource_name}"
+        update: "%{user_name} atualizou o tipo de processo participativo %{resource_name}"
+      assembly:
+        duplicate: "%{user_name} duplicou a assambleia %{resource_name}"
+        export: "%{user_name} exportou a assambleia %{resource_name}"
+        import: "%{user_name} importou a assambleia %{resource_name}"
+    author:
+      official_author: Oficial
+    devise:
+      registrations:
+        create:
+          error: Houve um erro ao criar sua conta.
+        new:
+          sign_in: Iniciar sessão
+    editor_images:
+      create:
+        error: Erro ao carregar a imagem.
+        success: Imagem carregada com sucesso.
+      drag_and_drop_help: Adicione imagens arrastando e soltando ou colando-as.
+    following:
+      non_public_followings: Alguns dos recursos seguidos não são públicos.
+    groups:
+      leave:
+        last_admin: Você não pode se remover deste grupo pois é o último administrador. Faça de outro membro um administrador para sair do grupo.
+      roles:
+        creator: Administrador
+    log:
+      base_presenter:
+        publish_with_space: "%{user_name} publicou %{resource_name} em %{space_name}"
+        unpublish_with_space: "%{user_name} despublicou %{resource_name} de %{space_name}"
+        update_permissions_with_space: "%{user_name} atualizou as permissões de %{resource_name} no %{space_name}"
+      value_types:
+        participatory_process_type_presenter:
+          not_found: "O tipo de processo não foi encontrado no banco de dados (ID: %{id})."
+    messaging:
+      conversations:
+        index:
+          to: Para
+        show:
+          deleted_accounts: Você não pode ter uma conversa com contas excluídas.
+    newsletter_mailer:
+      newsletter:
+        see_on_website: Não consegue ver este e-mail corretamente? Visualize-o no <a href="%{link}" target="_blank" class="see-on-website">site</a>.
+    notification_mailer:
+      event_received:
+        no_translation_available: Desculpe, a tradução automática não pode ser recuperada quando o e-mail for enviado. Você pode verificar a tradução do texto original no seguinte link %{link}.
+        original_text: 'Texto original:'
+        same_language: O conteúdo foi publicado em seu idioma preferido (%{language}), e é por isso que nenhuma tradução automática é exibida neste e-mail.
+        translated_text: 'Texto traduzido automaticamente:'
+    notifications:
+      show:
+        missing_event: 'Ops, esta notificação pertence a um item que não está mais disponível. Você pode descartá-lo.'
+    notifications_digest_mailer:
+      header:
+        daily: Resumo de Notificação Diário
+        weekly: Resumo de Notificação Semanal
+      hello: Olá %{name},
+      intro:
+        daily: 'Estas são as notificações do último dia com base na atividade que você está seguindo:'
+        weekly: 'Estas são as notificações da última semana com base na atividade que você está seguindo:'
+      outro: 'Você recebeu essas notificações porque está seguindo este conteúdo ou seus autores. Você pode deixar de segui-las em suas respectivas páginas.'
+      see_more: Ver mais notificações
+      subject: Este é o resumo do e-mail
+    notifications_settings:
+      show:
+        allow_push_notifications: Receba notificações para descobrir o que está acontecendo quando você não estiver na plataforma. Você pode desativá-las a qualquer momento.
+        email_on_moderations: Quero receber um e-mail toda vez que algo ou alguém for denunciado por moderação.
+        notification_settings:
+          close_meeting_reminder: Quero receber lembretes por e-mail de reuniões fechadas de relatórios não publicados
+        notifications_sending_frequencies:
+          daily: Diariamente
+          none: Nenhum
+          real_time: Tempo real
+          weekly: Semanalmente
+        notifications_sending_frequency: Com que frequência deseja receber o e-mail de notificações?
+    offline:
+      show:
+        message: Parece que você está offline no momento. Por favor, tente novamente mais tarde.
+        retry: Tentar de novo
+    pages:
+      home:
+        footer_sub_hero:
+          footer_sub_hero_body: Vamos construir uma sociedade mais aberta, transparente e colaborativa.<br /> Participe, participe e decida.
+          register: Cadastre-se
+        hero:
+          participate_title: Participe nos processos da plataforma          
+      terms_and_conditions:
+        form:
+          agreement: Concordo com estes termos
+        refuse:
+          modal_body: Se recusar, você não poderá usar a plataforma, você pode <a href="%{download_your_data_path}">baixar seus dados</a> e / ou <a href="%{delete_path}">excluir sua conta</a>.
+          modal_btn_continue: Aceite os termos e continue
+          modal_button: Recuse os termos
+        required_review:
+          title: 'Required: Review updates to our terms of service'
+    passwords:
+      update:
+        error: Houve um problema ao atualizar a senha.
+        success: Senha atualizada com sucesso.
+    shared:
+      mentions_modal:
+        remove_recipient: Remover destinatário %{name}
+    user_activity:
+      index:
+        no_activities_warning: Este participante não possui nenhuma atividade ainda.
+    user_conversations:
+      show:
+        deleted_accounts: Você não pode ter uma conversa com contas excluídas.
+    user_report_mailer:
+      notify:
+        details: Detalhes fornecidos pelo usuário
+    blogs:
+      admin_log:
+        post:
+          create: "%{user_name} criou o publicação no blog %{resource_name} no %{space_name}"
+          delete: "O %{user_name} excluiu a publicação no blog %{resource_name} do %{space_name}"
+          update: "%{user_name} atualizou a publicação no blog %{resource_name} do %{space_name}"
+      models:
+        post:
+          fields:
+            title: Título
+      posts:
+        index:
+          empty: Não existem publicações ainda.
+    sortitions:
+      admin:
+        sortitions:
+          new:
+            confirm: Pressionando o botão de seguinte, a plataforma registrará a data e a hora (com precisão de segundos) e junto com os dados rolados, esta informação será usada para gerar uma seleção aleatória. A ação será irreversível, uma vez que o botão for clicado o resultado desse sorteio será publicado, juntamente com os dados inseridos neste formulário e não podem ser modificados, por favor, verifique o conteúdo com cuidado.
+    accountability:
+      admin:
+        import_results:
+          new:
+            download_export: "Baixe a Exportação com formato CSV"
+            info: |
+              <p>Nós recomendamos que você siga esses passos:</p>
+              <ol>
+                <li><a href='%{link_new_status}' target='_blank'>Crie os Status para os Resultado</a>que você queira adicionar.</li>
+                <li><a href='%{link_new_result}' target='_blank'>Crie no mínimo um Resultado maualmente</a> através desse Painel de Administração antes de usar a função Importar, para um melhor entendimento a respeito do formato e o que você precisa preencher.</li>
+                <li>%{link_export_csv}</li>
+                <li>Faça as mudanças localmente. Você só pode alterar as seguintes colunas do CSV:
+                  <ul>
+                   <li><b>categoria/id:</b> Identificador para a Categoria</li>
+                   <li><b>escopo/id:</b> Identificador  para o Escopo</li>
+                    <li><b>pai/id:</b> Identificador do pai (para   Resultados relacionados). Opcional</li>
+                   <li><b>titulo/pt-br:</b> Título na língua Portuguesa. Isto dependerá das configurações de linguagem da sua plataforma.</li>
+                    <li><b>descricao/pt-br:</b> Descrição na língua Portuguesa. Isto dependerá das configurações de linguagem da sua plataforma.</li>
+                   <li><b>data_inicio:</b> data de início de execução dos resultados (formato DD-MM-YYYY)</li>
+                   <li><b>data_fim:</b> data de fim da execução dos resultados (formato DD-MM-YYYY)</li>
+                   <li><b>status/id:</b> Identificador do Status para este resultado</li>
+                    <li><b>progresso:</b> Porcentagem (de 0 a 100) desta execução</li>
+                    <li><b>ids_propostos:</b> Identificadores interno das propostas relacionadas (serparadas por vírgula). É automaticamente convertida para <span class='attribute-name'>url_proposta</span></li>
+                 </ul>
+               </li>
+              </ol>
+      admin_log:
+        status:
+          create: "%{user_name} criou o status %{resource_name} "
+          delete: "%{user_name} deletou o status %{resource_name}."
+          update: "%{user_name} atualizou o status %{resource_name}."
+        timeline_entry:
+          create: "%{user_name} criou a entrada de linha do tempo %{resource_name}"
+          delete: "%{user_name} excluiu a entrada de linha do tempo %{resource_name}"
+          update: "%{user_name} atualizou a entrada em linha do tempo %{resource_name}"
+      models:
+        timeline_entry:
+          fields:
+            title: Título
+    debates:
+      debates:
+        debates:
+          empty: Não há debates ainda.
+          empty_filters: Não há debates com estes critérios.
+        filters:
+          participants: Participantes
+    conferences:
+      admin:
+        conference_copies:
+          form:
+            slug_help: 'Os slugs de URL são usados ​​para gerar as URLs que apontam para esta conferência. Aceita apenas letras, números e traços e deve começar com uma letra. Exemplo: %{url}'
+        conferences:
+          form:
+            slug_help: 'Os slugs de URL são usados para gerar as URLs que apontam para esta conferência. Aceita apenas letras, números e traços e deve começar com uma letra. Exemplo: %{url}'
+        invite_join_conference_mailer:
+          invite:
+            invited_user_to_join_a_conference: '%{invited_by} convidou você a participar de uma reunião em %{application}. Você pode aceitá-lo através do link abaixo.'
+      conference_registrations:
+        create:
+          unauthorized: Você precisa fazer login antes de se registrar na conferência.
+        decline_invitation:
+          unauthorized: Você precisa fazer login antes de recusar o convite.
+      conference_speaker:
+        go_to_twitter: Ir para X
+      pages:
+        home:
+          highlighted_conferences:
+            see_all_conferences: Veja todas as conferências
+    system:
+      admins:
+        show:
+          destroy: Destruir
+      devise:
+        passwords:
+          edit:
+            change_your_password: Mude sua senha
+            minimum_characters: (%{minimum} caracteres no mínimo)
+          new:
+            forgot_your_password: Esqueceu sua senha
+            send_me_reset_password_instructions: Envie-me as instruções de redefinição de senha
+        shared:
+          links:
+            did_not_receive_confirmation_instructions?: Não recebeu instruções de confirmação?
+            did_not_receive_unlock_instructions?: Não recebeu instruções de desbloqueio?
+            forgot_your_password?: Esqueceu sua senha?
+            log_in: Iniciar sessão
+            sign_up: Inscrever-se
+      organizations:
+        edit:
+          title: Editar organização
+        new:
+          default: Padrão?
+          enabled: Habilitado
+          locale: Local
+          reference_prefix_hint: O prefixo de referência é usado para identificar exclusivamente recursos em todas as organizações.
+          secondary_hosts_hint: Insira cada um deles em uma nova linha.
+      titles:
+        decidim: Decidim
+    budgets:
+      actions:
+        send_voting_reminders: Enviar lembretes de votação
+      admin:
+        projects:
+          index:
+            actions: Ações
+            cancel: Cancelar
+            change_category: Mudar categoria
+            change_scope: Mudar escopo
+            change_selected: Alterar estado selecionado
+            deselect_implementation: Desselecionar da implementação
+            select_for_implementation: Selecionado para implementação
+            update: Atualizar
+            update_scope_button: Atualizar escopo
+          update_category:
+            invalid: 'Estes projetos já tinham a categoria %{subject_name}: %{projects}.'
+            select_a_category: Por favor, selecione uma categoria.
+            select_a_project: Por favor, selecione um projeto.
+            success: 'Projetos atualizados com sucesso para a categoria %{subject_name}: %{projects}.'
+          update_scope:
+            invalid: 'Estes projetos já tinham o escopo %{subject_name}: %{projects}.'
+            select_a_project: Por favor, selecione um projeto.
+            select_a_scope: Por favor, selecione um escopo.
+            success: 'Projetos atualizados com sucesso no scopo %{subject_name}: %{projects}.'
+          update_selected:
+            invalid:
+              selected: 'Estes projetos já foram selecionados para a implementação: %{projects}.'
+              unselected: 'Estes projetos já foram desselecionados da implementação: %{projects}.'
+            select_a_project: Por favor, selecione um projeto.
+            select_a_selection: Por favor, selecione um estado de implementação.
+            success:
+              selected: 'Estes projetos foram selecionados com sucesso para a implementação: %{projects}.'
+              unselected: 'Estes projetos foram desselecionados da implementação com sucesso: %{projects}.'
+        proposals_imports:
+          new:
+            default_budget: Orçamento padrão
+            import_all_accepted_proposals: Importar todas as propostas aceitas
+            origin_component_id: Componente de origem
+        reminders:
+          orders:
+            description: Os usuários receberão um e-mail com links para os orçamentos em que tenham pedido pendente.
+          title:
+            one: Você está prestes a enviar um lembrete por email para %{count} usuário 
+            other: Você está prestes a enviar um lembrete por email para %{count} usuários
+      last_activity:
+        new_vote_at_html: "<span>Nova votação de orçamentação no %{link}</span>"
+      models:
+        project:
+          fields:
+            category: Categoria
+            id: ID
+      projects:
+        budget_excess:
+          budget_excess:
+            description: Este projecto excede o orçamento máximo e não pode ser adicionado. Se você quiser, você pode excluir um projeto que você já selecionou, a fim de poder votar novamente de acordo com suas preferências.
+          description: Este projecto excede o orçamento máximo e não pode ser adicionado. Se você quiser, você pode excluir um projeto que você já selecionou, a fim de poder votar novamente de acordo com suas preferências.
+          projects_excess:
+            description: Este projeto excede o número máximo de projetos e não pode ser adicionado. Se você quiser, você pode excluir um projeto que você já selecionou, a fim de poder votar novamente de acordo com suas preferências.
+        exit_modal:
+          cancel: Voltar à votação
+          exit: Fechar modal
+          message: Seu voto não foi registrado porque você ainda não concluiu o processo de votação. Tem certeza que deseja sair da votação?
+          title: Você ainda não votou
+        index:
+          view_project: Ver projeto
+        project:
+          you_voted: Você votou nisto
+      vote_reminder_mailer:
+        vote_reminder:
+          email_budgets: 'Áreas onde você tem uma votação inacabada:'
+          email_intro: Você iniciou a votação sobre o orçamento participativo, mas não a concluíu.
+          email_link: Ir para continuar a votação
+          email_outro: Por favor, lembre-se de concluir a votação. Para votar, primeiro selecione a proposta ou as propostas que deseja votar e, em seguida, confirme o seu voto com o botão "Votar".
+          email_subject:
+            one: Você tem um voto inacabado na votação do orçamento participativo
+            other: Você tem votos inacabados na votação do orçamento participativo
+    moderations:
+      models:
+        moderation:
+          fields:
+            deleted_resource: Recurso excluído
+            reportable_id: ID
+    consultations:
+      filters:
+        date: Data
+    resources:
+      question:
+        actions:
+          comment: Comentário
+          vote: Voto
+    surveys:
+      admin:
+        component:
+          actions:
+            answers_alert: Se você publicar o componente, todos os resultados serão removidos.
+    elections:
+      admin:
+        mailers:
+          trustee_mailer:
+            body: <p>Olá %{user_name},</p><p>Você foi adicionado como fiduciário de %{resource_name}.</p>
+            subject: Você foi adicionado como um fiduciário a %{resource_name}
+            trustee_zone: Leve-me à zona de fiduciários
+        questions:
+          create:
+            election_started: A eleição já começou.
+        steps:
+          create_election:
+            census: Censo
+            errors:
+              census_codes_generated: Códigos de acesso do censo não foram gerados.
+              census_frozen: Códigos de acesso do censo não foram exportados.
+              census_uploaded: Não há censos carregados para esta eleição.
+              component_published: O componente de eleção <strong>não está publicado</strong>.
+              time_before: O horário de início é em <strong>menos que %{hours}</strong> antes do começo das eleições.
+            requirements:
+              census_codes_generated: Códigos de acesso do censo são gerados.
+              census_frozen: Os códigos de acesso do censo são exportados e o censo está congelado.
+              census_uploaded: O Censo foi carregado.
+              component_published: O componente de eleição <strong>está publicado</strong>.
+          tally_started:
+            continue: Continuar
+            title: Processo de registro
+      admin_log:
+        election:
+          report_missing_trustee: "%{user_name} relatou %{trustee_name} como um fiduciário ausente durante o concurso para a eleição %{resource_name} de %{space_name} no Bulletin Board"
+      connection:
+        failed:
+          modal:
+            close: Fechar
+            communication_lost: Infelizmente, parece que a comunicação com o servidor de votação (Bulletin Board) foi perdida.<br>Pode ser que a conexão com a Internet esteja interrompida ou que o servidor de destino esteja muito ocupado.<br>Você pode tentar novamente mais tarde ou entrar em contato com o suporte se esse problema persistir.
+            generic_error: Infelizmente, ocorreu um erro desconhecido. É provável que seu navegador não seja suportado ou que você esteja usando o modo "incognito" ou "privado", que não é suportado.
+            title: Algo deu errado
+      election_m:
+        footer:
+          remaining_time:
+            zero: "<strong>%{minutes} minutos</strong> restantes para votar."
+      elections:
+        filters:
+          date: Data
+        results:
+          votes:
+            zero: "%{count} votos"
+      trustee_zone:
+        elections:
+          tally_started_steps:
+            back: Voltar
+            list:
+              status: Status
+              task: Tarefa
+            process_warning: Depois que o processo for iniciado, você não deverá sair desta página até que o processo termine. Levará vários minutos, pois todos os fiduciários deverão estar conectados para completá-lo.
+            start: Iniciar
+            status:
+              completed: Concluído
+              pending: Pendente
+              processing: Processando
+        trustees:
+          show:
+            identification_keys:
+              submit_legend: Depois de seguir todos os passos explicados acima, complete o processo enviando a chave de identificação pública para o servidor.
+              upload_legend: O servidor possui suas chaves de identificação pública, mas seu navegador ainda não as têm. Você precisa importar o arquivo com as suas chaves de identificação para o seu computador, a partir do "backup" que você criou após gerá-las.
+      votes:
+        ballot_decision:
+          cast: Envie sua cédula para depositar seu voto
+        onboarding_modal:
+          description: Você quer criar uma nova conta na plataforma? Você poderá participar dos processos e ser parte ativa da organização.
+          title: Novo na plataforma?
+        verify:
+          form:
+            back: Voltar à plataforma
+            vote_identifier_help: Este é o identificador que lhe foi dado depois de você transmitir o seu voto (não o código para digitar a cabine de voto).
+    votings:
+      admin:
+        content_blocks:
+          landing_page:
+            attachments_and_folders:
+              name: Anexos e pastas de votação
+            elections:
+              name: Votações electorais
+            header:
+              name: Cabeçalho de votação
+            html_block_1:
+              name: Bloco de votação html 1
+            html_block_2:
+              name: Bloco de votação html 2
+            html_block_3:
+              name: Bloco de votação html 3
+            metrics:
+              name: Métricas de votação
+            polling_stations:
+              name: Estações de voto
+            stats:
+              name: Estatísticas de votação
+            timeline:
+              name: Linha do tempo da votação
+        index:
+          not_published: Despublicado
+        monitoring_committee_polling_station_closures:
+          edit:
+            monitoring_committee_notes_placeholder: Relate qualquer incidente aqui
+        votings:
+          form:
+            banner_image: Imagem de banner
+            census_contact_information: Informação de contato do censo
+            census_contact_information_help: Esta informação de contato é para um participante que deseja relatar problemas com o censo. Pode ser um endereço de e-mail, um formulário de contato em outro site, uma pesquisa para visitantes, etc.
+            introductory_image: Imagem introdutória
+            promoted: Promovido
+            show_check_census_help: Mostrar ou não o link "Eu voto?" no menu de votações públicas.
+            slug: Slug
+            slug_help: 'Os slugs de URL são usados para gerar os URLs que apontam para essa votação. Aceita apenas letras, números e traços e deve começar com uma letra. Exemplo: %{url}'
+            voting_type_label: Tipo de votação
+      census:
+        admin:
+          census:
+            creating_data:
+              info_message: "<strong>Aguarde</strong>, processadas %{processed_count} de %{raw_count} linhas do arquivo %{file} (isso pode levar alguns minutos)."
+            delete:
+              confirm: A exclusão de todos os dados do censo não pode ser desfeita. Tem certeza que deseja continuar?
+            export_access_codes:
+              file_not_exist: Este arquivo não existe
+            exporting_access_codes:
+              info_message: "<strong>Por favor, aguarde</strong>, a exportação está sendo preparada, você o receberá em breve para %{email} (isso pode levar alguns minutos)."
+            freeze:
+              help_html: |
+                Os dados do censo foram carregados, os códigos gerados e exportados com sucesso.<br>
+                <strong>Você está pronto para iniciar a eleição.</strong><br>
+                Use o CSV exportado com códigos individuais para distribuí-lo ao longo do seu censo por meios próprios ou ative a guia "Posso votar" para permitir que qualquer pessoa recupere este código utilizando os seus próprios dados do censo.
+            generate_access_codes:
+              start_over: Por favor, apague o censo atual e comece novamente com um arquivo CSV adequado com linhas válidas.
+            generating_access_codes:
+              info_message: "<strong>Por favor, aguarde</strong>, os códigos de acesso para votação estão sendo gerados (isso pode levar alguns minutos)..."
+            new:
+              submit: Enviar CSV
+      content_blocks:
+        landing_page:
+          description:
+            title: Sobre esta votação
+      pages:
+        home:
+          highlighted_votings:
+            active_votings: Votações Ativas
+            see_all_votings: Ver todas as votações
+      polling_officer_zone:
+        closures:
+          new:
+            modal_ballots_count_error:
+              info_explanation_text: 'Por favor, reveja o número total de votos. Se o número total estiver incorreto, você deve fornecer uma explicação para o Comité de Acompanhamento:'
+        in_person_votes:
+          complete_voting:
+            census_verified: Este participante ainda não votou em pessoa.
+            census_verified_with_online_vote: Este usuário já votou online. Se eles votarem em pessoa, os votos anteriores serão invalidados e esta será a votação definitiva.
+            questions_title_voted: 'Este participante já votou online e tem direito a votar nas seguintes perguntas:'
+      votings:
+        check_census:
+          error:
+            info: 'Por favor, tente novamente. Se você acha que os dados no sistema estão incorretos, você pode reportá-los aqui: %{census_contact_information}.'
+            title: Os dados inseridos não estão no censo para esta votação
+          success:
+            access_link: via e-mail.
+        check_fields:
+          document_type: Tipo de documento
+        filters:
+          date: Data
+    proposals:
+      admin:
+        imports:
+          help:
+            answers: |
+              O documento de importação deve conter os seguintes nomes de coluna, no caso de arquivos CSV ou Excel, ou nomes de chave, no caso de arquivos JSON:
+              <ul>
+              <li><b>id:</b> ID da proposta a ser respondida</li>
+              <li><b>state:</b> Uma das opções "aceito", "avaliando" ou "rejeitado"</li>
+              <li><b>answer/en:</b> Resposta no idioma inglês. Isso dependerá da configuração de idioma de sua plataforma.</li>
+              </ul>
+            proposals: |
+              O arquivo deve ter os seguintes nomes de coluna em caso de arquivos CSV ou Excel. ou nomes de chaves no caso dos arquivos JSON:
+              <ul>
+              <li><b>title/en:</b> Título no idioma inglês. Isso dependerá da configuração de idioma de sua plataforma.</li>
+              <li><b>body/en:</b> Corpo no idioma inglês. Isso dependerá da configuração de idioma de sua plataforma.</li>
+              <li><b>scope/id:</b> ID do Escopo</li>
+              <li><b>category/id:</b> ID da categoria</li>
+              </ul>
+          label:
+            answers: Importar respostas de um arquivo
+            proposals: Importar propostas de um arquivo
+          resources:
+            answers:
+              one: resposta na proposta
+              other: respostas na proposta
+          title:
+            answers: Importar respostas da proposta
+        proposal_answers:
+          form:
+            not_answered: Não respondido
+      application_helper:
+        filter_origin_values:
+          participants: Participantes
+      collaborative_drafts:
+        create:
+          error: Houve um problema ao criar este rascunho colaborativo
+        new:
+          add_file: Adicionar arquivo
+          edit_file: Editar arquivo
+      proposals:
+        edit:
+          add_documents: Adicionar documentos
+          add_image: Adicionar imagem
+          edit_documents: Editar documentos
+          edit_image: Editar imagem
+        new:
+          title: Crie sua proposta
+        participatory_texts:
+          index:
+            document_index: Índice de documentos
+    participatory_process_groups:
+      content_blocks:
+        metadata:
+          developer_group: Promovido por
+    participatory_processes:
+      admin:
+        participatory_process_copies:
+          form:
+            slug_help: 'Os slugs de URL são usados para gerar os URLs que apontam para este processo. Aceita apenas letras, números e traços e deve começar com uma letra. Exemplo: %{url}'
+        participatory_process_imports:
+          form:
+            slug_help: 'Os slugs de URL são usados para gerar os URLs que apontam para este processo. Aceita apenas letras, números e traços e deve começar com uma letra. Exemplo: %{url}'
+        participatory_process_steps:
+          form:
+            cta_path_help: 'Use caminhos parciais, não URLs completas aqui. Aceita letras, números, traços e barras e deve começar com uma letra. Se não for definido, o botão não será mostrado. Exemplo: %{url}'
+        participatory_processes:
+          form:
+            select_participatory_process_type: Selecione um tipo de processo
+            slug_help: 'Os slugs de URL são usados para gerar os URLs que apontam para este processo. Aceita apenas letras, números e traços e deve começar com uma letra. Exemplo: %{url}'
+      pages:
+        home:
+          highlighted_processes:
+            active_processes: Processos ativos
+            see_all_processes: Ver todos os processos
+      participatory_processes:
+        filters:
+          all_types: Todos os tipos
+          filter_by: Mostrar
+        show:
+          title: Sobre este processo
+      show:
+        local_area: Área da organização
+    assemblies:
+      admin:
+        assemblies:
+          form:
+            included_at_help: Selecione a data em que a assambleia foi adicionada à plataforma. Não precisa necessariamente ser o mesmo que a data de criação.
+            slug_help: 'Os slugs de URL são usados para gerar os URLs que apontam para essa assambleia. Aceita apenas letras, números e traços e deve começar com uma letra. Exemplo: %{url}'
+        assemblies_copies:
+          form:
+            slug_help: 'Os slugs de URL são usados para gerar os URLs que apontam para essa assambleia. Aceita apenas letras, números e traços e deve começar com uma letra. Exemplo: %{url}'
+          index:
+            filter:
+              ceased: Cessado
+              not_ceased: Não cessado
+      assemblies:
+        show:
+          title: Sobre essa assambleia
+      pages:
+        home:
+          highlighted_assemblies:
+            active_assemblies: Assembleias ativas
+            see_all_assemblies: Ver todas as assembleias 
+      show:
+        indefinite_duration: Indefinido
+        social_networks_title: Visite assembleia em
+    templates:
+      admin_log:
+        create: 'O %{user_name} criou o modelo de questionário %{resource_name}'
+        delete: '%{user_name} excluiu o modelo de questionário %{resource_name}'
+        duplicate: '%{user_name} duplicou o modelo de questionário %{resource_name}'
+        update: '%{user_name} atualizou o modelo de questionário %{resource_name}'
+    initiatives:
+      admin:
+        initiatives_settings:
+          edit:
+            update: Atualizar
+          form:
+            comments: Mais comentada
+            date: Mais recente
+            publication_date: Mais recentemente publicada
+            random: Aleatória
+            signatures: Mais assinadas
+            title: Configurações de iniciativas
+        initiatives_types:
+          form:
+            child_scope_threshold_enabled_help: 'Esse parâmetro de configuração não suporta votos off-line, permite subescopos e funciona com um manipulador de autorização que associa o escopo ao usuário, certifique-se de selecionar a autorização, nas configurações de autorização. Para que funcione, os escopos precisam ser configurados de forma hierárquica: 1 Pai - N Filhos. Para mais informações sobre como essa configuração funciona, consulte este <a href="https://docs.decidim.org/en/admin/spaces/initiatives" target="_blank">link</a>.'
+            only_global_scope_enabled_help: Marque este sinalizador se você habilitou "Assinatura de escopo Filho" e configurou o escopo global como seu escopo pai. Habilitando esta possibilidade, a selecção do tipo de iniciativa será ignorada no assistente de criação de iniciativa. Para mais informações sobre como essa configuração funciona, consulte este <a href="https://docs.decidim.org/en/admin/spaces/initiatives/" target="_blank">link</a>.
+      admin_log:
+        initiatives_settings:
+          update: "%{user_name} atualizou as configurações das iniciativas"
+        initiatives_type:
+          create: "%{user_name} criou o tipo de iniciativas %{resource_name}"
+          delete: "%{user_name} excluiu o tipo de iniciativas %{resource_name}"
+          update: "%{user_name} atualizou o tipo de iniciativas %{resource_name}"
+      create_initiative:
+        fill_data:
+          decidim_user_group_id_help: Não é possível alterar a autoria da iniciativa após a criação
+      form:
+        attachment_legend: '(Opcional) Adicionar um anexo'
+      index:
+        uninitialized: 'As iniciativas ainda não estão configuradas por um administrador.'
+      initiatives:
+        print:
+          members_header: 'Membros do comitê de promotor da iniciativa'
+      pages:
+        home:
+          highlighted_initiatives:
+            active_initiatives: Iniciativas ativas
+            see_all_initiatives: Ver todas as iniciativas
+      signature_interval:
+        title: Signature collection period
+  devise:
+    invitations:
+      edit:
+        nickname_help: Seu nome de usuário em %{organization}.
+    passwords:
+      edit:
+        password_help_admin: "Mínimo de caracteres %{minimun_characters}, não deve ser muito comum (por exemplo, 123456) deve ser diferente do seu nome de usuário e seu e-mail e deve ser diferente das senhas antigas."
+        title: Mudar senha
+    sessions:
+      new:
+        sign_in: Iniciar sessão
+    shared:
+      links:
+        sign_in: Iniciar sessão
+  carrierwave:
+    errors:
+      file_cannot_be_processed: O arquivo não pode ser processado
+      file_resolution_too_large: A resolução do arquivo é muito grande
+      file_size_too_large: O tamanho do arquivo é grande demais
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: aproximadamente 1 hora
+        other: aproximadamente %{count} horas
+      about_x_months:
+        one: aproximadamente 1 mês
+        other: aproximadamente %{count} meses
+      half_a_minute: meio minuto
+      less_than_x_minutes:
+        one: menos de um minuto
+        other: menos de %{count} minutos
+      less_than_x_seconds:
+        one: menos de 1 segundo
+        other: menos de %{count} segundos
+      x_days:
+        one: 1 dia
+        other: "%{count} dias"
+      x_hours:
+        one: 1 hora
+        other: "%{count} horas"
+      x_minutes:
+        one: 1 minuto
+        other: "%{count} minutos"
+      x_months:
+        one: 1 mês
+        other: "%{count} meses"
+      x_seconds:
+        one: 1 segundo
+        other: "%{count} segundos"
+  errors:
+    messages:
+      allowed_file_content_types: 'apenas arquivos com as seguintes extensões são permitidos: %{types}'
+      password_confirmation_message: '"Confirme sua senha" não coincide com a senha'
+      too_short: é muito curto (menos de 15 caracteres)
+      url_format: Esta URL está em formato incorreto
+  layouts:
+    decidim:
+      data_consent:
+        details:
+          columns:
+            type: Tipo
+            description: Descrição
+            name: Nome
+            service: Serviço
+          items:
+            _session_id:
+              description: Permite que os sites lembrem o usuário dentro de um site quando se movem entre as páginas da web.
+              service: Este site
+            decidim-consent:
+              description: Armazena informações sobre os cookies permitidos pelo usuário neste site.
+              service: Este site
+            pwaInstallPromptSeen:
+              description: Armazena o status se a notificação de instalação progressiva do aplicativo web (PWA) já foi vista pelo usuário.
+              service: Este site
+          types:
+            cookie: Cookie
+            local_storage: Armazenamento local
+        dialog:
+          accept_all: Aceitar todas
+          accept_only_essential: Aceitar apenas o essencial
+          description: Utilizamos cookies neste site para amelhorar o desempenho da página. As cookies nos permitem oferecer uma experiência mais personalizada ao usuário e aos canais de redes sociais
+          settings: Configurações
+          title: Informações sobre as cookies utilizadas no site
+        modal:
+          accept_all: Aceitar todas
+          accept_only_essential: Aceitar apenas o essencial
+          analytics:
+            description: Esses cookies são usados para medir e analisar o público do site para ajudar a melhorar o site.
+            title: Análises e estatísticas
+          description: Usamos cookies para garantir as funcionalidades básicas do site e melhorar a sua experiência on-line. Você pode configurar e aceitar o uso dos cookies e modificar suas opções de consentimento, a qualquer momento.
+          essential:
+            description: These cookies enable key functionality of the website and help to keep its users secured. They are automatically saved in the browser and cannot be disabled.
+            title: Essencial
+          marketing:
+            description: Esses cookies coletam informações sobre como você usa o site e eles podem ser utilizados para fornecer a você marketing mais personalizado em diferentes sites que você usa.
+            title: Marketing
+          preferences:
+            description: Esses cookies permitem que o site lembre as escolhas que você fez no passado neste site para fornecer uma experiência mais personalizada para os usuários do site.
+            title: Preferências
+          save_settings: Salvar configurações
+          title: Configurações de cookies
+          toggle: Alternar %{consent_category}
+        warning:
+          all_categories: todas as cookies
+          change_settings: Mudar configurações de cookies
+          consent_required: Você precisa ativar %{categories} para visualizar este conteúdo.
+      footer:
+        data_consent_settings: Configurações de cookies
+        download_open_data: Dados abertos
+      offline_banner:
+        cache_version_page: Oooops! Sua rede está fora de linha. Esta é uma versão armazenada em cache da página que você está visitando, pode ser que o conteúdo não esteja atualizado
+      social_media_links:
+        x: "%{organization} em X"
+      system:
+        login_items:
+          logout: Sair
+  password_validator:
+    blacklisted: está na lista negra
+    nickname_included_in_password: é muito parecido com o seu nome de usuário
+    password_repeated: não é possível reutilizar a senha antiga
+  social_share_button:
+    x: X
+  time:
+    formats:
+      ddmm: "%d.%m"
+      ddmmyyyy: "%d.%m.%Y"
+  versions:
+    dropdown:
+      choose_diff_view_mode_menu: Escolher modo de comparação

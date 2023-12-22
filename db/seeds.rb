@@ -42,8 +42,8 @@ organization = Decidim::Organization.first || Decidim::Organization.create!(
   secondary_hosts: ["0.0.0.0", "127.0.0.1"],
   external_domain_whitelist: ["decidim.org", "github.com"],
   description: "",
-  default_locale: "pt",
-  available_locales: ["pt"],
+  default_locale: "pt-BR",
+  available_locales: ["pt-BR"],
   reference_prefix: "minutas",
   available_authorizations: Decidim.authorization_workflows.map(&:name),
   users_registration_mode: :enabled,
@@ -53,12 +53,12 @@ organization = Decidim::Organization.first || Decidim::Organization.create!(
   send_welcome_notification: true,
   file_upload_settings: Decidim::OrganizationSettings.default(:upload),
   enable_omnipresent_banner: true,
-  cta_button_text: {"pt"=>"participar"},
+  cta_button_text: {"pt-BR"=>"participar"},
   cta_button_path: "pages/help",
   official_url: "https://ok.org.br",
   omnipresent_banner_url: "https://minutas.ok.org.br/pages/help",
-  omnipresent_banner_title: {"pt": "Aviso"},
-  omnipresent_banner_short_description: {"pt": "Aqui vão os avisos da plataforma sobre minutas mais recentes, status de operações no site, etc."},
+  omnipresent_banner_title: {"pt-BR": "Aviso"},
+  omnipresent_banner_short_description: {"pt-BR": "Aqui vão os avisos da plataforma sobre minutas mais recentes, status de operações no site, etc."},
 )
 
 # Add branding to the organization.
@@ -68,7 +68,7 @@ organization.official_img_footer = upload.("logo-okbr.png")
 organization.save!
 
 # Create "terms & conditions" and "help" pages.
-organization.static_pages ||
+organization.static_pages.present? ||
   Decidim::System::CreateDefaultPages.call(organization) &&
   Decidim::System::PopulateHelp.call(organization)
 
@@ -110,7 +110,7 @@ admin = Decidim::User.first || Decidim::User.create!(
   nickname: "admin",
   organization: organization,
   confirmed_at: Time.current,
-  locale: :pt,
+  locale: :"pt-BR",
   admin: true,
   tos_agreement: true,
   personal_url: "https://example.org",
@@ -129,9 +129,9 @@ Decidim::ParticipatoryProcess.count >= 3 ||
       slug: "politica-de-dados-abertos-#{city.parameterize}",
       organization: organization,
       title: {"pt": "Decreto para instituição de Política de Dados Abertos do #{city}"},
-      subtitle: {"pt": "A prefeita de um município mais transparente decreta"},
-      short_description: {"pt": "<p>Minuta colaborativa para os municípios</p>"},
-      description: {"pt": "<p>This is a long description</p>"},
+      subtitle: {"pt-BR": "A prefeita de um município mais transparente decreta"},
+      short_description: {"pt-BR": "<p>Minuta colaborativa para os municípios</p>"},
+      description: {"pt-BR": "<p>This is a long description</p>"},
       weight: (index + 1) * 10,
       published_at: Time.current,
       start_date: Time.current,
