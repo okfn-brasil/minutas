@@ -1,5 +1,5 @@
 #okbr-link {
-  flex: 1 0 auto;
+  margin: auto 1rem;
 }
 
 .navbar {
@@ -24,7 +24,7 @@
 }
 
 .main-nav ul > li > a {
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .main-nav ul > li:not(:last-child) a {
@@ -54,5 +54,24 @@
 @media all and (max-width: 639px) {
     .topbar__dropmenu > ul > li > a {
         color: white;
+    }
+
+    .topbar > div.logo-wrapper {
+      flex-direction: column;
+    }
+    #okbr-link {
+      margin: 1.2rem 0 0;
+    }
+
+    .okbr-search {
+      width: 100%;
+    }
+
+    .main-nav ul > li > a {
+      margin: 1rem auto;
+    }
+
+    .main-nav ul > li:not(:last-child) a {
+      border-right: 0px;
     }
 }

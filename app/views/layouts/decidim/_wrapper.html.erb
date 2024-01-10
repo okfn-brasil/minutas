@@ -45,10 +45,10 @@ end
             <div class="row column topbar">
               <div class="logo-wrapper">
                 <%= render partial: "layouts/decidim/logo", locals: { organization: current_organization } %>
-              </div>
-              <div id="okbr-link">
-                <%= link_to "open knowledge brasil", "https://ok.org.br", target: "_blank", rel: "nofollow" %>
-              </div>
+                <div id="okbr-link">
+                  <%= link_to "open knowledge brasil", "https://ok.org.br/", target: "_blank", rel: "nofollow" %>
+                </div>
+              </div>             
               <%= render partial: "layouts/decidim/topbar_search" %>
               <%= render partial: "layouts/decidim/language_chooser" %>
               <div class="hide-for-medium topbar__menu">
