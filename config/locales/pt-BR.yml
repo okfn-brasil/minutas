@@ -702,7 +702,7 @@ pt-BR:
         creator: Administrador
     links:
       warning:
-        body_1: Você está prestes a sair do %{organization_name}.
+        body_1: Você está prestes a sair do cominutas.
         body_2: Como medida de precaução, por favor verifique o link no qual clicou e certifique-se que o reconhece.
     log:
       base_presenter:
