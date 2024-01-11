@@ -113,9 +113,11 @@ pt-BR:
         title: Título
       assembly:
         announcement: Anúncio
+        assembly_type_other: Outro tipo de assambleia
         documents: Documentos
         import_attachments: Importar anexos
         import_categories: Importar categorías
+        parent_id: Assambleia mãe
         twitter: X
       assembly_member:
         weight: Posição de ordenamento
@@ -202,6 +204,15 @@ pt-BR:
         other: Iniciativas
   decidim:
     admin:
+      assembly_user_roles:
+        create:
+          success: Usuário adicionado com sucesso a esta assambleia.
+          error: Ocorreu um erro ao adicionar um usuário para esta assambleia.
+        edit:
+          title: Atualize o usuário da assambleia.
+        update:
+          error: Ocorreu um erro ao atualizar um usuário para esta assambleia.
+          success: Usuário atualizado com sucesso para esta assambleia.
       filters:
         meetings:
           with_any_origin:
@@ -248,8 +259,8 @@ pt-BR:
         resend_invitation: Reenviar convite
         unpublish: Remover publicação
         import_assembly: Importar
-        new_assembly: Nova reunião
-        new_assembly_type: Novo tipo de reunião
+        new_assembly: Nova assembleia
+        new_assembly_type: Novo tipo de assembleia
         new_initiative_type: Novo tipo de iniciativa
       password_change:
         alert: Você precisa alterar sua senha para prosseguir
@@ -260,12 +271,16 @@ pt-BR:
       menu:
         participatory_process_types: Tipos de processo
         initiatives_settings: Configurações
+        reported_users: Usuários denunciados
       models:
         participatory_process_type:
           fields:
             created_at: Criado em
             title: Título
-          name: Tipo de processo        
+          name: Tipo de processo
+        newsletter:
+          fields:
+            subject: Assunto
       titles:
         edit_external_domains: Lista branca de domínios externos
         edit_organization_appearance: Editar aparência da página inicial
@@ -319,6 +334,8 @@ pt-BR:
           send_to_all_users: Enviar para todos os usuários
           send_to_followers: Enviar para seguidores
           send_to_participants: Enviar para participantes
+        show:
+          subject: Assunto
       organization:
         form:
           twitter: X
@@ -679,6 +696,12 @@ pt-BR:
         duplicate: "%{user_name} duplicou a assambleia %{resource_name}"
         export: "%{user_name} exportou a assambleia %{resource_name}"
         import: "%{user_name} importou a assambleia %{resource_name}"
+        update: "%{user_name} atualizou a assambleia %{resource_name}"
+      assembly_member:
+        create: "%{user_name} criou o membro %{resource_name} na assambleia %{space_name}"
+        update: "%{user_name} atualizou o %{resource_name} membro na assambleia %{space_name}"
+      assembly_user_role:
+        update: "%{user_name} atualizou o %{resource_name} membro na assambleia %{space_name}"
     author:
       official_author: Oficial
     devise:
@@ -781,6 +804,8 @@ pt-BR:
         error: Houve um problema ao atualizar a senha.
         success: Senha atualizada com sucesso.
     shared:
+      login_modal:
+        sign_up: Cadastrar-se
       mentions_modal:
         remove_recipient: Remover destinatário %{name}
     user_activity:
@@ -1336,12 +1361,16 @@ pt-BR:
       edit:
         password_help_admin: "Mínimo de caracteres %{minimun_characters}, não deve ser muito comum (por exemplo, 123456) deve ser diferente do seu nome de usuário e seu e-mail e deve ser diferente das senhas antigas."
         title: Mudar senha
+    registrations:
+      new:
+        sign_up: Cadastrar-se
     sessions:
       new:
         sign_in: Iniciar sessão
     shared:
       links:
         sign_in: Iniciar sessão
+        sign_up: Cadastrar-se
   carrierwave:
     errors:
       file_cannot_be_processed: O arquivo não pode ser processado
@@ -1385,6 +1414,11 @@ pt-BR:
       url_format: Esta URL está em formato incorreto
   layouts:
     decidim:
+      assemblies:
+        order_by_assemblies:
+          assemblies:
+            one: "%{count} assambleia"
+            other: "%{count} assambleias"
       data_consent:
         details:
           columns:
@@ -1408,9 +1442,9 @@ pt-BR:
         dialog:
           accept_all: Aceitar todas
           accept_only_essential: Aceitar apenas o essencial
-          description: Utilizamos cookies neste site para amelhorar o desempenho da página. As cookies nos permitem oferecer uma experiência mais personalizada ao usuário e aos canais de redes sociais
+          description: Utilizamos cookies neste site para melhorar o desempenho da página. Cookies nos permitem oferecer uma experiência mais personalizada personalizada de navegação.
           settings: Configurações
-          title: Informações sobre as cookies utilizadas no site
+          title: Informações sobre os cookies utilizados no site
         modal:
           accept_all: Aceitar todas
           accept_only_essential: Aceitar apenas o essencial
