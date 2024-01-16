@@ -1,6 +1,8 @@
 pt-BR:
   activemodel:
     attributes:
+      import_participatory_text:
+        document: Importar texto participativo
       content_block_attachment:
         background_image: Imagem de fundo
       meeting:
@@ -113,11 +115,11 @@ pt-BR:
         title: Título
       assembly:
         announcement: Anúncio
-        assembly_type_other: Outro tipo de assambleia
+        assembly_type_other: Outro tipo de assembleia
         documents: Documentos
         import_attachments: Importar anexos
         import_categories: Importar categorías
-        parent_id: Assambleia mãe
+        parent_id: Assembleia mãe
         twitter: X
       assembly_member:
         weight: Posição de ordenamento
@@ -206,13 +208,13 @@ pt-BR:
     admin:
       assembly_user_roles:
         create:
-          success: Usuário adicionado com sucesso a esta assambleia.
-          error: Ocorreu um erro ao adicionar um usuário para esta assambleia.
+          success: Usuário adicionado com sucesso a esta assembleia.
+          error: Ocorreu um erro ao adicionar um usuário para esta assembleia.
         edit:
-          title: Atualize o usuário da assambleia.
+          title: Atualize o usuário da assembleia.
         update:
-          error: Ocorreu um erro ao atualizar um usuário para esta assambleia.
-          success: Usuário atualizado com sucesso para esta assambleia.
+          error: Ocorreu um erro ao atualizar um usuário para esta assembleia.
+          success: Usuário atualizado com sucesso para esta assembleia.
       filters:
         meetings:
           with_any_origin:
@@ -693,15 +695,15 @@ pt-BR:
         delete: "%{user_name} criou o tipo de processo participativo %{resource_name}"
         update: "%{user_name} atualizou o tipo de processo participativo %{resource_name}"
       assembly:
-        duplicate: "%{user_name} duplicou a assambleia %{resource_name}"
-        export: "%{user_name} exportou a assambleia %{resource_name}"
-        import: "%{user_name} importou a assambleia %{resource_name}"
-        update: "%{user_name} atualizou a assambleia %{resource_name}"
+        duplicate: "%{user_name} duplicou a assembleia %{resource_name}"
+        export: "%{user_name} exportou a assembleia %{resource_name}"
+        import: "%{user_name} importou a assembleia %{resource_name}"
+        update: "%{user_name} atualizou a assembleia %{resource_name}"
       assembly_member:
-        create: "%{user_name} criou o membro %{resource_name} na assambleia %{space_name}"
-        update: "%{user_name} atualizou o %{resource_name} membro na assambleia %{space_name}"
+        create: "%{user_name} criou o membro %{resource_name} na assembleia %{space_name}"
+        update: "%{user_name} atualizou o %{resource_name} membro na assembleia %{space_name}"
       assembly_user_role:
-        update: "%{user_name} atualizou o %{resource_name} membro na assambleia %{space_name}"
+        update: "%{user_name} atualizou o %{resource_name} membro na assembleia %{space_name}"
     author:
       official_author: Oficial
     devise:
@@ -1283,18 +1285,18 @@ pt-BR:
       admin:
         assemblies:
           form:
-            included_at_help: Selecione a data em que a assambleia foi adicionada à plataforma. Não precisa necessariamente ser o mesmo que a data de criação.
-            slug_help: 'Os slugs de URL são usados para gerar os URLs que apontam para essa assambleia. Aceita apenas letras, números e traços e deve começar com uma letra. Exemplo: %{url}'
+            included_at_help: Selecione a data em que a assembleia foi adicionada à plataforma. Não precisa necessariamente ser o mesmo que a data de criação.
+            slug_help: 'Os slugs de URL são usados para gerar os URLs que apontam para essa assembleia. Aceita apenas letras, números e traços e deve começar com uma letra. Exemplo: %{url}'
         assemblies_copies:
           form:
-            slug_help: 'Os slugs de URL são usados para gerar os URLs que apontam para essa assambleia. Aceita apenas letras, números e traços e deve começar com uma letra. Exemplo: %{url}'
+            slug_help: 'Os slugs de URL são usados para gerar os URLs que apontam para essa assembleia. Aceita apenas letras, números e traços e deve começar com uma letra. Exemplo: %{url}'
           index:
             filter:
               ceased: Cessado
               not_ceased: Não cessado
       assemblies:
         show:
-          title: Sobre essa assambleia
+          title: Sobre essa assembleia
       pages:
         home:
           highlighted_assemblies:
@@ -1417,8 +1419,8 @@ pt-BR:
       assemblies:
         order_by_assemblies:
           assemblies:
-            one: "%{count} assambleia"
-            other: "%{count} assambleias"
+            one: "%{count} assembleia"
+            other: "%{count} assembleias"
       data_consent:
         details:
           columns:
