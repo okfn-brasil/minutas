@@ -274,6 +274,7 @@ pt-BR:
         participatory_process_types: Tipos de processo
         initiatives_settings: Configurações
         reported_users: Usuários denunciados
+        impersonations: Visualizar como outro usuário
       models:
         participatory_process_type:
           fields:
