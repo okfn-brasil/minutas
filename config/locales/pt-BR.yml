@@ -748,7 +748,7 @@ pt-BR:
     newsletter_mailer:
       newsletter:
         see_on_website: <a href="%{link}" target="_blank" class="see-on-website">Ver no navegador</a>
-        note: Você recebeu este e-mail porque se inscreveu nos boletins informativos do %{organization_name}. É possível <a href="%{link}">editar</a> suas configurações de notificações.
+        note: Você recebeu este e-mail porque se inscreveu nos boletins informativos do %{organization_name}. É possível <a href="%{link}">editar</a> suas configurações de notificações,
         unsubscribe: ou <a href="%{link}" target="_blank" class="unsubscribe">cancelar</a> a sua inscrição.
     notification_mailer:
       event_received:
