@@ -109,6 +109,7 @@ pt-BR:
         import_steps: Importar etapas
         participatory_process_type_id: Tipo de processo
         private_space: Processo privado
+        copy_steps: Copiar etapas
       participatory_process_type:
         title: Título
       assemblies_type:
@@ -503,6 +504,9 @@ pt-BR:
           explanation: 'Orientação para o ícone:'
           message_1: Deve ser uma imagem quadrada.
           message_2: O tamanho recomendado para esta imagem é 512x512.
+        image:
+          message_1: Preferencialmente, uma imagem de paisagem que não tenha nenhum texto.
+          message_2: O serviço recorta a imagem.
       file_validation:
         max_file_dimension: 'Dimensões máximas de arquivo: %{resolution} pixels'
       files:
@@ -553,6 +557,11 @@ pt-BR:
       badges:
         accepted_proposals:
           description_another: Este participante obteve %{score} propostas aceitas.
+        index:
+          badge_title: 'Selo "%{name}"'
+          page_description: Os selos são reconhecimentos para ações dos participantes e progresso na plataforma. Ao começar a descobrir, participar e interagir na plataforma, você ganhará selos diferentes. Aqui está a lista de selos e algumas maneiras de ganhá-los.
+          title: Selos
+      description: Os selos são reconhecimentos para ações dos participantes e progresso na plataforma. Ao começar a descobrir, participar e interagir na plataforma, você ganhará selos diferentes. Aqui está a lista de selos e algumas maneiras de ganhá-los.
     meetings:
       admin:
         meetings:
@@ -633,6 +642,8 @@ pt-BR:
       withdraw:
         error: Ocorreu um erro ao retirar a reunião.
         success: A reunião foi retirada com sucesso.
+    menu:
+      home: Início
     accessibility:
       front_page_link: Ir à página inicial
     account:
@@ -806,7 +817,15 @@ pt-BR:
       update:
         error: Houve um problema ao atualizar a senha.
         success: Senha atualizada com sucesso.
+    profiles:
+      show:
+        badges: Selos
+      sidebar:
+        badges:
+          title: Selos
     shared:
+      embed_modal:
+        embed_link: Incorporar
       login_modal:
         sign_up: Cadastrar-se
       mentions_modal:
@@ -1306,6 +1325,7 @@ pt-BR:
       show:
         indefinite_duration: Indefinido
         social_networks_title: Visite assembleia em
+        read_more: Veja mais
     templates:
       admin_log:
         create: 'O %{user_name} criou o modelo de questionário %{resource_name}'

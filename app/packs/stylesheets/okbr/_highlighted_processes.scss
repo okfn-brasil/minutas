@@ -4,6 +4,13 @@
 
 #highlighted_processes .card {
   background-color: transparent;
+  &:hover {
+    color: #3d393c;
+  }
+}
+
+#highlighted_processes .card__image-top {
+  height: 12rem;
 }
 
 #highlighted_processes .card__content {

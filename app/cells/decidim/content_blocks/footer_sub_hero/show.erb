@@ -1,8 +1,8 @@
 <section id="footer_sub_hero" class="footer__subhero extended subhero home-section">
   <div class="row">
     <div class="columns">
-      <h3 class="heading3">BOAS-VINDAS À PLATAFORMA COLABORATIVA COMINUTAS</h3>
-      <h4 class="heading4">Vamos construir uma sociedade mais aberta, transparente e colaborativa.
+      <h3 class="heading3">BOAS-VINDAS À PLATAFORMA COLABORATIVA <strong style="font-weight: bold;">COMINUTAS</strong></h3>
+      <h4 class="heading4">Vamos construir uma sociedade mais aberta, transparente e colaborativa. </br>
 Inscreva-se, participe e decida.</h4>
       <% if current_organization.sign_up_enabled? && !current_user %>
         <%= link_to decidim.new_user_registration_path, class: "button button--sc", title: t("decidim.pages.home.sub_hero.register_title") do %>

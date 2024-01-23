@@ -5,8 +5,9 @@ $color-gray: #ececec;
 
 $color-primary: $color-pink;
 $anchor-color: $color-purple;
+$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 
-$button-padding: .5rem 1rem;
+$button-padding: .85em 1em;
 $button-background: $color-pink;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $black;
