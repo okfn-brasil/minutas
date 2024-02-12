@@ -826,6 +826,8 @@ pt-BR:
     shared:
       embed_modal:
         embed_link: Incorporar
+      floating_help:
+        help: Ajuda
       login_modal:
         sign_up: Cadastrar-se
       mentions_modal:
