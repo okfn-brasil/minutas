@@ -7,8 +7,8 @@ pt-BR:
         background_image: Imagem de fundo
       meeting:
         end_time: Hora de término
-        iframe_embed_type: Tipo de iframe a embeber
-        registration_type: Tipo de registo
+        iframe_embed_type: Tipo de iframe a incorporar
+        registration_type: Tipo de registro
         reserved_slots: Vagas reservadas para esta reunião
         start_time: Hora de início
       meeting_agenda:
@@ -25,7 +25,7 @@ pt-BR:
         code: Código
       user:
         locale: Local
-        tos_agreement: Acordo de termos e condiciones de uso
+        tos_agreement: Acordo de termos e condições de iso
       post:
         body: Corpo
         decidim_author_id: Autor
@@ -46,16 +46,16 @@ pt-BR:
       conference_speaker:
         personal_url: Site pessoal
         short_bio: Biografia resumida
-        twitter_handle: Usuário de X (twitter)
+        twitter_handle: Usuário de X (Twitter)
       organization:
-        twitter_handle: Nome de usuário de X (twitter)
+        twitter_handle: Nome de usuário de X (Twitter)
       project:
         proposals: Propostas
       proposals_import:
         scope_id: Âmbito
         import_proposals: Importar propostas
         keep_answers: Manter o estado e as respostas
-        keep_authors: Manter aos autores originais
+        keep_authors: Manter autores originais
       attachment:
         weight: Posição de ordenamento
       attachment_collection:
@@ -74,18 +74,18 @@ pt-BR:
       confirmation:
         verification_code: Código de verificação
       mobile_phone:
-        mobile_phone_number: Número de telephone celular
+        mobile_phone_number: Número de telefone celular
       ballot_style:
         code: Código
       monitoring_committee_member:
-        email: Email
+        email: E-mail
         name: Nome
       polling_officer:
-        email: Email
+        email: E-mail
         name: Nome
       polling_station:
         address: Endereço
-        location: Locação
+        location: Localização
         location_hints: Dicas de localização
         polling_station_managers: Gerentes
         polling_station_president_id: Presidente
@@ -154,15 +154,15 @@ pt-BR:
         participatory_space_private_user_csv_import:
           attributes:
             file:
-              malformed: Arquivo de importação malformado, por favor leia as instruções cuidadosamente e certifique-se de que o arquivo é codificado em UTF-8.
+              malformed: Erro no arquivo de importação. Por favor, leia as instruções cuidadosamente e certifique-se de que o arquivo é codificado em UTF-8.
         user_group_csv_verification:
           attributes:
             file:
-              malformed: Arquivo de importação malformado, por favor leia as instruções cuidadosamente e certifique-se de que o arquivo é codificado em UTF-8.
+              malformed: Erro no arquivo de importação. Por favor, leia as instruções cuidadosamente e certifique-se de que o arquivo é codificado em UTF-8.
         census_data:
           attributes:
             file:
-              malformed: Arquivo de importação malformado, por favor leia as instruções cuidadosamente e certifique-se de que o arquivo é codificado em UTF-8.
+              malformed: Erro no arquivo de importação. Por favor, leia as instruções cuidadosamente e certifique-se de que o arquivo é codificado em UTF-8.
         voting:
           attributes:
             voting_type:
@@ -182,7 +182,7 @@ pt-BR:
       new_import:
         attributes:
           file:
-            invalid_file: Arquivo inválido fornecido, por favor, verifique se o arquivo está formatado corretamente.
+            invalid_file: Arquivo inválido fornecido. Por favor, verifique se o arquivo está formatado corretamente.
     models:
       decidim/invited_to_group_event: Convidado para o grupo
       decidim/promoted_to_admin_event: Promovido a administrador do grupo
@@ -288,20 +288,20 @@ pt-BR:
       titles:
         edit_external_domains: Lista branca de domínios externos
         edit_organization_appearance: Editar aparência da página inicial
-        pages: Paginas
+        pages: Páginas
         users: Administradores
         participatory_process_types: Tipos de processos participativos
       admin_terms_of_use:
         actions:
           accept: Concordo com estes termos
-          refuse: Recusar os termos de administrador
+          refuse: Recuso os termos de administrador
         required_review:
-          cta: Reveja eles agora.
+          cta: Reveja-os agora.
       attachments_privacy_warning:
         message: Tenha cuidado ao trabalhar com anexos em um espaço privado. Qualquer participante pode compartilhar este documento com outros.
       dashboard:
         show:
-          welcome: Ben-vindo/a ao Painel de Administração
+          welcome: Boas-vindas ao Painel de Administração
       imports:
         and: e
         data_errors:
@@ -346,8 +346,8 @@ pt-BR:
       organization_appearance:
         form:
           colors:
-            colors_warning_html: Aviso! Mudando essas cores pode quebrar os contrastes de acessibilidade. Você pode verificar o contraste de sua escolha com o <a href="%{link}">Verificador de Contrastes WebAIM</a> ou outras ferramentas similares.
-          cta_button_path_help: 'Você pode substituir onde o botão Chamar para Ação na página inicial liga. Use caminhos parciais, não URLs completas aqui. Aceita letras, números, traços e barras e deve começar com uma letra. O botão Chamar para Ação é exibido na página inicial entre o texto de boas-vindas e a descrição. Exemplo: %{url}'
+            colors_warning_html: Aviso! Mudando essas cores, você pode quebrar os contrastes de acessibilidade. Você pode verificar o contraste de sua escolha com o <a href="%{link}">Verificador de Contrastes WebAIM</a> ou outras ferramentas similares.
+          cta_button_path_help: 'Você pode substituir para onde o botão "Chamar para Ação" da página inicial aponta. Use caminhos parciais aqui, em vez de URLs completas. Aceita letras, números, traços e barras e deve começar com uma letra. O botão Chamar para Ação é exibido na página inicial entre o texto de boas-vindas e a descrição. Exemplo: %{url}'
       organization_homepage:
         edit:
           active_content_blocks: Blocos de conteúdo ativo
@@ -443,7 +443,7 @@ pt-BR:
           step:
             creation_enabled: Os participantes podem criar propostas
             creation_enabled_readonly: Essa configuração é desativada quando você ativa a funcionalidade de textos participativos. Para enviar propostas como texto participativo, clique no botão de textos participativos e siga as instruções.
-            publish_answers_immediately_help_html: Lembre-se de que, se você responder qualquer proposta sem isto habilitado, será necessário publicá-las manualmente, selecionando-as e usando a ação para publicação. Para obter mais informações sobre como isso funciona, consulte a página de documentação de respostas de <a href="https://docs.decidim.org/en/admin/components/proposals/answers#_publication" target="_blank">proposta</a>.
+            publish_answers_immediately_help_html: Lembre-se de que se você responder qualquer proposta sem isto habilitado, será necessário publicá-las manualmente, selecionando-as e usando a ação para publicação. Para obter mais informações sobre como isso funciona, consulte a página de documentação de respostas de <a href="https://docs.decidim.org/en/admin/components/proposals/answers#_publication" target="_blank">proposta</a>.
       comment:
         moderated_at: Comentário moderado em %{date}
         show_replies:
@@ -556,7 +556,7 @@ pt-BR:
     gamification:
       badges:
         accepted_proposals:
-          description_another: Este participante obteve %{score} propostas aceitas.
+          description_another: Participante obteve %{score} propostas aceitas.
         index:
           badge_title: 'Selo "%{name}"'
           page_description: Os selos são reconhecimentos para ações dos participantes e progresso na plataforma. Ao começar a descobrir, participar e interagir na plataforma, você ganhará selos diferentes. Aqui está a lista de selos e algumas maneiras de ganhá-los.
@@ -812,7 +812,7 @@ pt-BR:
           modal_btn_continue: Aceite os termos e continue
           modal_button: Recuse os termos
         required_review:
-          title: 'Required: Review updates to our terms of service'
+          title: 'Necessário: revisar atualizações de nossos Termos de Uso e Política de Privacidade'
     passwords:
       update:
         error: Houve um problema ao atualizar a senha.
@@ -834,7 +834,7 @@ pt-BR:
         remove_recipient: Remover destinatário %{name}
     user_activity:
       index:
-        no_activities_warning: Este participante não possui nenhuma atividade ainda.
+        no_activities_warning: Participante ainda não possui nenhuma atividade.
     user_conversations:
       show:
         deleted_accounts: Você não pode ter uma conversa com contas excluídas.
@@ -868,7 +868,7 @@ pt-BR:
               <p>Nós recomendamos que você siga esses passos:</p>
               <ol>
                 <li><a href='%{link_new_status}' target='_blank'>Crie os Status para os Resultado</a>que você queira adicionar.</li>
-                <li><a href='%{link_new_result}' target='_blank'>Crie no mínimo um Resultado maualmente</a> através desse Painel de Administração antes de usar a função Importar, para um melhor entendimento a respeito do formato e o que você precisa preencher.</li>
+                <li><a href='%{link_new_result}' target='_blank'>Crie no mínimo um Resultado maualmente</a> por meio deste Painel de Administração antes de usar a função Importar, para um melhor entendimento a respeito do formato e o que você precisa preencher.</li>
                 <li>%{link_export_csv}</li>
                 <li>Faça as mudanças localmente. Você só pode alterar as seguintes colunas do CSV:
                   <ul>
@@ -915,7 +915,7 @@ pt-BR:
             slug_help: 'Os slugs de URL são usados para gerar as URLs que apontam para esta conferência. Aceita apenas letras, números e traços e deve começar com uma letra. Exemplo: %{url}'
         invite_join_conference_mailer:
           invite:
-            invited_user_to_join_a_conference: '%{invited_by} convidou você a participar de uma reunião em %{application}. Você pode aceitá-lo através do link abaixo.'
+            invited_user_to_join_a_conference: '%{invited_by} convidou você a participar de uma reunião em %{application}. Você pode aceitar por meio do link abaixo.'
       conference_registrations:
         create:
           unauthorized: Você precisa fazer login antes de se registrar na conferência.
@@ -1206,9 +1206,9 @@ pt-BR:
               info_explanation_text: 'Por favor, reveja o número total de votos. Se o número total estiver incorreto, você deve fornecer uma explicação para o Comité de Acompanhamento:'
         in_person_votes:
           complete_voting:
-            census_verified: Este participante ainda não votou em pessoa.
+            census_verified: Participante ainda não votou em pessoa.
             census_verified_with_online_vote: Este usuário já votou online. Se eles votarem em pessoa, os votos anteriores serão invalidados e esta será a votação definitiva.
-            questions_title_voted: 'Este participante já votou online e tem direito a votar nas seguintes perguntas:'
+            questions_title_voted: 'Participante já votou online e tem direito a votar nas seguintes perguntas:'
       votings:
         check_census:
           error:
