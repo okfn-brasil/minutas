@@ -40,3 +40,6 @@ public/uploads
 
 vendor/bundle
 node_modules
+
+# Ignore rbenv-vars
+rbenv-vars
