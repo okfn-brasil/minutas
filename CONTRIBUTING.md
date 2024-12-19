@@ -1,64 +1,96 @@
-# Como contribuir?
+## Ambiente de Desenvolvimento Local
 
-### Guia para build local e contribuição ao repositório
+### Requisitos
 
-Ambiente de desenvolvimento Local
-Requisitos
-* ruby 3.0.2
-* bundler 2.3.20
-* node 16
-* yarn
+- Ruby 3.0.2
+- Bundler 2.3.20
+- Node.js 16
+- Yarn
 
-## Instalação
-Em nosso exemplo estamos usando Ubuntu 24.04, mas esse guia pode se adaptar a outras distribuições Linux sem maiores problemas.
-Instale o rbenv seguindos as instruções da documentação oficial [https://github.com/rbenv/rbenv?tab=readme-ov-file#basic-git-checkout] para instalar e gerenciar versões do ruby.
+### Instalação
 
-Use o rbenv para instalar a versão correta do ruby
-`rbenv install 3.0.2`
-`rbenv global 3.0.2`
+Este guia usa Ubuntu 24.04 como exemplo, mas pode ser adaptado para outras distribuições Linux.
 
-Instale a versão correta do bundler
-`gem install bundler -v 2.3.20`
+1. Instale o rbenv seguindo as [instruções oficiais](https://github.com/rbenv/rbenv?tab=readme-ov-file#basic-git-checkout) para gerenciar versões do Ruby.
 
-Instale o rbenv-vars para gerenciamento de variáveis de ambiente
-`git clone https://github.com/rbenv/rbenv-vars.git "$(rbenv root)"/plugins/rbenv-vars`
+2. Use o rbenv para instalar a versão correta do Ruby:
 
-Instale o nvm para instalar e gerenciar versões do NodeJS
-https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
+   ```bash
+   rbenv install 3.0.2
+   rbenv global 3.0.2
+   ```
 
-Instale o NodeJs na versão 16
-`nvm install 16.20`
+3. Instale a versão correta do Bundler:
 
-Instale o Yarn
-        npm install --global yarn
+   ```bash
+   gem install bundler -v 2.3.20
+   ```
 
-Instale o Postgres
-`sudo apt-get install postgresql`
-Acesse o console do postgres
-`sudo -u postgres psql`
-Crie um usuário e senha (subistitua devdecidim pelo usuário de sua escolha e a senha 'minhasenha' por uma outra de sua escolha)
-`create user decidimdev with superuser password 'minhasenha';`
+4. Instale o rbenv-vars para gerenciamento de variáveis de ambiente:
 
+   ```bash
+   git clone https://github.com/rbenv/rbenv-vars.git "$(rbenv root)"/plugins/rbenv-vars
+   ```
 
-Clone o repositório
-`git clone https://github.com/okfn-brasil/minutas.git`
+5. Instale o nvm para gerenciar versões do Node.js seguindo as [instruções oficiais](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating).
 
-Acesse o diretório
-`cd minutas`
+6. Instale o Node.js na versão 16:
 
-Crie o arquivo .rbenv-vars com o seguinte conteúdo
-DATABASE_HOST=localhost
-DATABASE_USERNAME=decidimdev
-DATABASE_PASSWORD=minhasenha
+   ```bash
+   nvm install 16.20
+   ```
 
-Instale as gems necessárias (esse processo pode demorar alguns minutos)
-bundle
+7. Instale o Yarn:
 
-Crie o Banco de dados
-bin/rails db:create
+   ```bash
+   npm install --global yarn
+   ```
 
-Rode as migrations
-bin/rails db:migrate
+8. Instale o PostgreSQL:
 
-Alimente o banco (opicional)
-bin/rails db:seed
+   ```bash
+   sudo apt-get install postgresql
+   ```
+
+9. Configure o PostgreSQL:
+
+   ```bash
+   sudo -u postgres psql
+   create user decidimdev with superuser password 'minhasenha';
+   ```
+
+   Substitua 'decidimdev' e 'minhasenha' conforme necessário.
+
+10. Clone o repositório:
+
+    ```bash
+    git clone https://github.com/okfn-brasil/minutas.git
+    cd minutas
+    ```
+
+11. Crie o arquivo `.rbenv-vars` com o seguinte conteúdo:
+
+    ```
+    DATABASE_HOST=localhost
+    DATABASE_USERNAME=decidimdev
+    DATABASE_PASSWORD=minhasenha
+    ```
+
+12. Instale as gems necessárias:
+
+    ```bash
+    bundle
+    ```
+
+13. Crie o banco de dados e execute as migrações:
+
+    ```bash
+    bin/rails db:create
+    bin/rails db:migrate
+    ```
+
+14. (Opcional) Alimente o banco de dados:
+
+    ```bash
+    bin/rails db:seed
+    ```
